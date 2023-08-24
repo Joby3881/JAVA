@@ -1,0 +1,189 @@
+//prime no.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number");
+        int n=sc.nextInt();
+
+        int count=0;
+
+
+        for(int i=1 ; i<=n; i++){
+            if (n%i==0)
+                count++;
+
+        }
+        if(count==2)
+        {
+            System.out.println("number is  prime");
+        }
+        else   {
+
+            System.out.println("number is not prime");
+        }
+       }
+    }
+
+//fabunachi
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+        {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("enter how much you want fabunaci number");
+            int term=sc.nextInt();
+            int a=0, b=1, c,i;
+
+            for(i=1;i<=term;i++)
+            {
+                c=a+b;
+                a=b;
+                b=c;
+                System.out.println(a+" ");
+               
+           }
+          
+        }
+      }
+
+
+//amstronh no.
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter a number");
+        int num=sc.nextInt();
+        int sum=0,c=num,rem;
+
+        while(num>0)
+        {
+            rem = num%10;
+            sum = sum+rem*rem*rem;
+            num = num/10;
+        }
+        if(c==sum)
+        {
+            System.out.println("number is amstrong");
+        }
+        else
+        {
+            System.out.println("number is not amstrong");
+        }
+
+    }
+}
+
+//even number
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter");
+        int n= sc.nextInt();
+        while (n<=100)
+        {
+            System.out.println(n);
+            n+=2;
+        }
+    }
+}
+
+//palindrome no.
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter a number");
+        int num=sc.nextInt();
+        int sum=0,c=num,rem;
+
+        while(num>0)
+        {
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        if(c==sum)
+        {
+            System.out.println("number is palindrome");
+        }
+        else
+        {
+            System.out.println("number is not palindrome");
+        }
+
+    }
+}
+
+
+//reverse number.
+
+import java.util.*;
+public class Main
+    {
+    public static void main(String[] args)
+        {
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the number want revers");
+        int num= sc.nextInt();
+        System.out.println("the number is" +num);
+        int sum=0,rem;
+        while(num>0)
+        {
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        System.out.println("reverse number is" +sum);
+
+        }
+    }
+
+//swap 2no with 3 variable
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a=10;
+        int b=20;
+        int c=0;
+        c=a; // c=0, a=10 (c=10 &a=0)
+        a=b; // a=0, b=20 (a=20,b=0)
+        b=c; // b=0, c=10 (b=10, c=0)
+        System.out.println("the value of a is :" +a);
+        System.out.println("the value of b is :" +b);
+    }
+}
+
+
+//swap with/o 3 variable
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a=10;
+        int b=20;
+        int c=0;
+        a=a*b; //a=10*20=200;
+        b=a/b; //b=200/20=10;
+        a=a/b; //a=200-10=20;
+        System.out.println("the value of a is :" +a);
+        System.out.println("the value of b is :" +b);
+    }
+}

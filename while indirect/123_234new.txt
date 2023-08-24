@@ -1,0 +1,28 @@
+
+
+//import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a=123;
+        int rev=0;
+        int ret,r;
+        int x,y,z=0;
+        while(a>0)
+        {
+            r=a%10;
+            rev=rev*10+r+1;
+            a=a/10;
+        }
+        while(rev>0)
+        {
+            x = rev % 10;
+            z = z * 10 + x;
+            rev = rev / 10;
+        }
+        System.out.println(z);
+        }
+}
+
+

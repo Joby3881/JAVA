@@ -1,0 +1,58 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your name");
+        String name=input.nextLine();
+        System.out.println("enter your units");
+        int units=input.nextInt();
+
+        double amount,totalamount,payamount;
+
+       if(units>=1 && units<=10)
+       {
+           amount=units*10;
+           System.out.println(amount);
+           totalamount=amount*0.1;
+           payamount=amount-totalamount;
+           System.out.println("Discount : 10%");
+           System.out.println("Total pay amount" +payamount);
+       }
+       else if(units>=11 && units<=20)
+       {
+           amount=units*10;
+           System.out.println(amount);
+           totalamount=amount*0.15;
+           payamount=amount-totalamount;
+           System.out.println("Discount : 15%");
+           System.out.println("Total pay amount" +payamount);
+       }
+       else if(units>=21 && units<=40)
+       {
+           amount=units*10;
+           System.out.println(amount);
+           totalamount=amount*0.3;
+           payamount=amount-totalamount;
+           System.out.println("Discount : 30%");
+           System.out.println("Total pay amount" +payamount);
+       }
+       else if(units==50)
+       {
+           amount=units*10;
+           System.out.println(amount);
+           totalamount=amount*0.5;
+           payamount=amount-totalamount;
+           System.out.println("Discount : 50%");
+           System.out.println("Total pay amount" +payamount);
+       }
+       else
+       {
+           System.out.println();
+       }
+
+
+    }
+}
+

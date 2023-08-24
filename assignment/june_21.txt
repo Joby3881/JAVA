@@ -1,0 +1,360 @@
+//1.by setter and getter metherod second class use to to A+B or addition.
+//class  A {
+//    int a;
+//
+//    void setA(int a)
+//    {
+//        this.a = a;
+//    }
+//
+//    int getA()
+//    {
+//        return a;
+//    }
+//}
+//    class B extends A
+//    {
+//        int b;
+//        void setB(int b)
+//        {
+//          this.b=b;
+//        }
+//
+//    int getB()
+//    {
+//        return b;
+//    }
+//
+//    void add()
+//    {
+//        System.out.println(a + b);
+//    }
+//}
+//public class Main {
+//    public static void main(String[] args) {
+//        B b = new B();
+//        b.setA(5);
+//        b.setB(2);
+//        b.getA();
+//        b.getB();
+//        b.add();
+//}
+//}
+//o/p=7;
+
+
+
+//2.override in herarical inheritance.
+//class A{
+//    void show()
+//    {
+//        System.out.println("A");
+//    }
+//}
+//class B extends A{
+//
+//    void show()
+//    { super.show();
+//        System.out.println("B");
+//    }
+//}
+//class C extends A{
+//    void show()
+//    { super.show();
+//        System.out.println("C");
+//    }
+//}
+//class D extends A{
+//    void show()
+//    {
+//        super.show();
+//        System.out.println("D");
+//    }
+//}
+//class E extends A{
+//    void show()
+//    { super.show();
+//        System.out.println("E");
+//    }
+//}
+//public class Main{
+//    public static void main(String[] args) {
+//        B b=new B();
+//        b.show();
+//        C c=new C();
+//        c.show();
+//        D d=new D();
+//        d.show();
+//        E e=new E();
+//        e.show();
+//    }
+//}
+//o/p
+//A
+//B
+//A
+//C
+//A
+//D
+//A
+//E
+//Note: in the herarical inheritace the override can be change with use of 'super' key word other wise parent class
+//values cannot because of overriding process.
+
+
+
+//3.multilevel inheritance overrideing.
+//class A{
+//    void show()
+//    {
+//        System.out.println("A");
+//    }
+//}
+//class B extends A{
+//
+//    void show()
+//    { super.show();
+//        System.out.println("B");
+//    }
+//}
+//class C extends B{
+//    void show()
+//    { super.show();
+//        System.out.println("C");
+//    }
+//}
+//class D extends C{
+//    void show()
+//    {
+//        super.show();
+//        System.out.println("D");
+//    }
+//}
+//class E extends D{
+//    void show()
+//    { super.show();
+//        System.out.println("E");
+//    }
+//}
+//public class Main{
+//    public static void main(String[] args) {
+//
+//        E e=new E();
+//        e.show();
+//    }
+//}
+//O/P
+//A
+//B
+//C
+//D
+//E
+
+
+
+//4.herarical inheritance.
+//class A{
+//    void show()
+//    {
+//        System.out.println("A");
+//    }
+//}
+//class B extends A{
+//
+//    void show1()
+//    {
+//        System.out.println("B");
+//    }
+//}
+//class C extends B{
+//    void show2()
+//    {
+//        System.out.println("C");
+//    }
+//}
+//public class Main {
+//    public static void main(String[] args) {
+//        B b = new B();
+//        b.show();
+//        b.show1();
+//        C c = new C();
+//        c.show();
+//        c.show2();
+//    }
+//}
+//o/p
+//A
+//B
+//A
+//C
+
+
+
+//5.Set & get metherod by herarical inheritance.
+//class  A
+//{
+//    public int a;
+//    void setA()
+//    {
+//        this.a = a;
+//    }
+//    int getA()
+//    {
+//        return a;
+//    }
+//    void show1()
+//    {
+//        System.out.println("A");
+//    }
+//}
+//class B extends A
+//{
+//    int b;
+//
+//    void setB ()
+//    {
+//        this.b=b;
+//    }
+//    int getB()
+//    {
+//        return b;
+//    }
+//    void show2()
+//    {
+//        System.out.println("B");
+//    }
+//}
+//class C extends A
+//{
+//    int c;
+//    void setC()
+//    {
+//     this.c=c;
+//    }
+//    int getC()
+//    {
+//        return c;
+//    }
+//    void show3()
+//    {
+//        System.out.println("C");
+//    }
+//}
+//class D extends A{
+//    int d;
+//    void setD()
+//    {
+//        this.d=d;
+//    }
+//    int getD()
+//    {
+//        return d;
+//    }
+//    void show4()
+//    {
+//        System.out.println("D");
+//    }
+//}
+//public class Main{
+//
+//    public static void main(String[] args)
+//    {
+//        B b=new B();
+//        b.setA();
+//        b.setB();
+//        b.getA();
+//        b.getB();
+//        b.show1();
+//        b.show2();
+//        C c=new C();
+//        c.setA();
+//        c.setC();
+//        c.getA();
+//        c.getC();
+//        c.show1();
+//        c.show3();
+//        D d=new D();
+//        d.setA();
+//        d.setD();
+//        d.getA();
+//        d.getD();
+//        d.show1();
+//        d.show4();
+//    }
+//}
+//O/P
+//A
+//B
+//A
+//C
+//A
+//D
+
+
+//6.by getter setter metherod to a+b and b+c.
+//class  A
+//{
+//    public int a;
+//    void setA(int a)
+//    {
+//        this.a = a;
+//    }
+//    int getA()
+//    {
+//        return a;
+//    }
+//}
+//class B extends A
+//{
+//    int b;
+//
+//    void setB (int b)
+//    {
+//        this.b=b;
+//    }
+//    int getB()
+//    {
+//        return b;
+//    }
+//    void add1()
+//    {
+//        System.out.println(a+b);
+//    }
+//}
+//class C extends B
+//{
+//    int c;
+//    void setC(int c)
+//    {
+//     this.c=c;
+//    }
+//    int getC()
+//    {
+//        return c;
+//    }
+//    void add2()
+//    {
+//        System.out.println(b+c);
+//    }
+//}
+//public class Main{
+//
+//    public static void main(String[] args)
+//    {
+//        B b=new B();
+//        b.setA(3);
+//        b.setB(4);
+//        b.getA();
+//        b.getB();
+//        b.add1();
+//        C c=new C();
+//        c.setB(4);
+//        c.setC(2);
+//        c.getA();
+//        c.getC();
+//        c.add2();
+//    }
+//}
+//o/p
+//7
+//6

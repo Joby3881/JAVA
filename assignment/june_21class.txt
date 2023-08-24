@@ -1,0 +1,82 @@
+//1.single leavel inheritance
+//class A{
+//    void parent(){
+//        System.out.println("this is class a");
+//    }
+//}
+//class B {
+//    void parent(){
+//        System.out.println("this is class b");
+//    }
+//}
+//
+//public class Main {
+//    public static void main(String[] args) {
+//       A a=new A();
+//       a.parent();
+//       B b=new B();
+//       b.parent();
+//
+//    }
+//}
+
+//2.multileavel inheritance.
+//class A
+//{
+//    void first1()
+//    {
+//        System.out.println("Class A");
+//    }
+//}
+//class B extends A
+//{
+//    void first2()
+//    {
+//        System.out.println("Class B");
+//    }
+//}
+//class C extends B{
+//    void first3()
+//    {
+//        System.out.println("Class C");
+//    }
+//}
+//public class Main{
+//    public static void main(String[] args) {
+//        C s=new C();
+//        s.first1();
+//        s.first2();
+//        s.first3();
+//    }
+//}
+
+//3.Herarical inheritance.
+//class A{
+//    void showA()
+//    {
+//        System.out.println("Super class A");
+//    }
+//}
+//class B extends A {
+//    void showB()
+//    {
+//        System.out.println("Sub class of A");
+//    }
+//}
+//class C extends A{
+//    void showC()
+//    {
+//        System.out.println("C is sub class of a");
+//    }
+//}
+//public class Main {
+//    public static void main(String[] args) {
+//        B b = new B();
+//        b.showA();
+//        b.showB();
+//        C c = new C();
+//        c.showA();
+//        c.showC();
+//    }
+//}
+

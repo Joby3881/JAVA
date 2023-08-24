@@ -1,0 +1,60 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        int a = input.nextInt();
+        int b = input.nextInt();
+        int c = input.nextInt();
+        int d = input.nextInt();
+        int e = input.nextInt();
+        int f = input.nextInt();
+        int g = input.nextInt();
+        int h = input.nextInt();
+        int i = input.nextInt();
+        int j = input.nextInt();
+
+        if (a>b && a>c && a>d && a>e && a>f && a>g && a>h && a>i && a>j)
+        {
+            System.out.println("a is max");
+        }
+        else if(b>a && b>c && b>d && b>e && b>f && b>g && b>h && b>i && b>j)
+        {
+            System.out.println("b is max");
+        }
+        else if(c>a && c>b && c>d && c>e && c>f && c>g && c>h && c>i && c>j)
+        {
+            System.out.println("c is max");
+        }
+        else if(d>a && d>b && d>c && d>e && d>f && d>g && d>h && d>i && d>j)
+        {
+            System.out.println("d is max");
+        }
+        else if(e>a && e>b && e>c && e>d && e>f && e>g && e>h && e>i && e>j)
+        {
+            System.out.println("e is max");
+        }
+        else if(f>a && f>b && f>c && f>d && f>e && f>g && f>h && f>i && f>j)
+        {
+            System.out.println("f is max");
+        }
+        else if(g>a && g>b && g>c && g>d && g>e && g>f && g>h && g>i && g>j)
+        {
+            System.out.println("g is max");
+        }
+        else if(h>a && h>b && h>c && h>d && h>e && h>f && h>g && h>i && h>j)
+        {
+            System.out.println("h is max");
+        }
+        else if(i>a && i>b && i>c && i>d && i>e && i>f && i>g && i>h && i>j)
+        {
+            System.out.println("i is max");
+        }
+        else
+        {
+            System.out.println("j is max");
+        }
+
+    }
+}

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("enter the redius");
+        int r=input.nextInt();
+        System.out.print("enter the hight");
+        int h=input.nextInt();
+
+        double cylinder=(2*3.14*r*h)+(2*3.14*r*r);
+        System.out.print(cylinder);
+    }
+
+}

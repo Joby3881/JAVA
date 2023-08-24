@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("enter the redius");
+        int l=input.nextInt();
+        double cube=l*l*l;
+        System.out.print(cube);
+    }
+
+}

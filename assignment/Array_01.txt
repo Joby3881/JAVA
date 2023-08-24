@@ -1,0 +1,20 @@
+5) Take 10 integer inputs from user and store them in an array. Again ask user to give a number. 
+Now, tell user whether that number is present in array or not.
+which? 
+
+//import java.util.Scanner;
+//public class Main{
+//  public static void main(String[] args) {
+//    Scanner sc = new Scanner(System.in);
+//    int num = sc.nextInt();
+//    int a[]= {10,20,30,40,50};
+//    for(int i=0;i<a.length;i++){
+//      if(a[i]==num){
+//        System.out.println("present at "+i);
+//      }
+//      if(a[i]!=num){
+//        System.out.println("not p");
+//      }
+//    }
+//  }
+//}

@@ -1,0 +1,25 @@
+import javafx.scene.control.TableColumn;
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+
+        int sum =0, i=1;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter");
+        int num= sc.nextInt();
+
+        while (i <= num)
+        {
+            sum=sum+i;
+            i++;
+
+            System.out.println(sum);
+
+
+        }
+    }
+}
+

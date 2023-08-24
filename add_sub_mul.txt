@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+    {
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("enter first number");
+        int a=input.nextInt();
+        System.out.print("enter second number");
+        int b=input.nextInt();
+        int add=a+b;
+        System.out.println(add);
+        int sub=a-b;
+        System.out.println(sub);
+        int pro=a*b;
+        System.out.println(pro);
+        int div=a*b;
+        System.out.println(div);
+        int avrg=(a+b)/2;
+        System.out.println(avrg);
+        
+    }
+
+
+
+
+}

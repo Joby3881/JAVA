@@ -1,0 +1,23 @@
+//fabunachi
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+        {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("enter how much you want fabunaci number");
+            int term=sc.nextInt();
+            int a=0, b=1, c,i;
+
+            for(i=1;i<=term;i++)
+            {
+                c=a+b;
+                a=b;
+                b=c;
+                System.out.println(a+" ");
+               
+            }
+           
+
+        }
+        }

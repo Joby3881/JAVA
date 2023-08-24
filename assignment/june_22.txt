@@ -1,0 +1,179 @@
+//1.create person class get name and age through constructor ?
+// class Person {
+//    String name;
+//    int age;
+//
+//    Person(String name,int age)
+//    {
+//        this.name = name;
+//        this.age = age;
+//    }
+//}
+//
+//public class Main{
+//    public static void main(String[] args)
+//    {
+//        Person p=new Person("anil",22);
+//        System.out.println(p.name);
+//        System.out.println(p.age);
+//    }
+//}
+
+
+
+//2.create rectangle class with width & hight attributes calculate area and rectangle ?
+//class rectangle{
+//    int hight;
+//    int width;
+//
+//    rectangle(int hight, int width){
+//        this.hight=hight;
+//        this.width=width;
+//    }
+//    void area()
+//    {
+//        int area=width*hight;
+//        System.out.println("area is :" +area);
+//    }
+//}
+//public class Main{
+//    public static void main(String[] args) {
+//        rectangle r=new rectangle(5,6);
+//        r.area();
+//    }
+//}
+//o/p : area is :30
+
+
+//3.create a class circle with a redius and perameter calculate the area and circumference of the circle ?
+//class circle{
+//    int redius;
+//
+//    circle(int redius){
+//
+//        this.redius=redius;
+//    }
+//    void area()
+//    {
+//        double area=3.14*redius*redius;
+//        System.out.println("area is :" +area);
+//    }
+//    void circumference()
+//    {
+//        double circumference=2*3.14*redius;
+//        System.out.println("circumference of circle :" +circumference);
+//    }
+//}
+//
+//4.public class Main{
+//    public static void main(String[] args) {
+//        circle c=new circle(3);
+//        c.area();
+//        c.circumference();
+//    }
+//}
+//
+//o/p : area is :28.26.
+//circumference of circle :18.84.
+
+
+
+//4.traffic lite red green yellow (multileavel inheritance);
+//class trafficlite{
+//    void show()
+//    {
+//        System.out.println("Trafficlite lite showing attention please:::::");
+//    }
+//}
+//class red extends trafficlite{
+//    void show(){ super.show();
+//        System.out.println("redlite");
+//    }
+//}
+//class orange extends red{
+//    void show(){ super.show();
+//        System.out.println("orangelite");
+//    }
+//}
+//class green extends orange{
+//    void show(){ super.show();
+//        System.out.println("greenlite");
+//    }
+//}
+//public class Main{
+//    public static void main(String[] args) {
+//        green g=new green();
+//        g.show();
+//    }
+//}
+//o/p : Trafficlite lite showing attention please:::::
+//redlite
+//orangelite
+//greenlite
+
+
+//5.area : circle class, rectangle class, square class, rectangle class.(by getter seter metherod)
+//class  area {
+//    int r;
+//    int l, h;
+//    int a;
+//}
+//    class circle extends area{
+//
+//    void setA(int r)
+//    {
+//        this.r=r;
+//    }
+//    int getA(){
+//        return r;
+//    }
+//    void area(){
+//     double area=3.14*r*r;
+//        System.out.println("area of circle is : "+area);
+//    }
+//}
+//class rectangle extends area{
+//    void setB(int l,int h){
+//        this.l=l;
+//        this.h=h;
+//    }
+//    int getB(){
+//        return r;
+//    }
+//    void area(){
+//        double area=l*h;
+//        System.out.println("area of rectangle is : "+area);
+//    }
+//}
+//class square extends area{
+//    void setC(int l){
+//        this.l=l;
+//    }
+//    int getC(){
+//        return r;
+//    }
+//    void area(){
+//        double area=l*l;
+//        System.out.println("area of square is : " +area);
+//    }
+//}
+//public class Main{
+//    public static void main(String[] args) {
+//        circle c=new circle();
+//        c.setA(5);
+//        c.getA();
+//        c.area();
+//        rectangle r=new rectangle();
+//        r.setB(2,3);
+//        r.getB();
+//        r.area();
+//        square s=new square();
+//        s.setC(2);
+//        s.getC();
+//        s.area();
+//
+//    }
+//}
+//o/p:area of circle is : 78.5
+//area of rectangle is : 6.0
+//area of square is : 4.0

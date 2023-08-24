@@ -1,0 +1,10 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a=34,b=87,c=65,d=23,e=12,ans;
+        ans=(a+b)-(c*d)+e;
+        System.out.print(ans);
+
+    }
+}

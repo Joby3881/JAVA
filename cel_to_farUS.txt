@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("enter the tempareture");
+        int c=input.nextInt();
+        double F=(c*1.8)+32;
+        System.out.print(F);
+    }
+
+}

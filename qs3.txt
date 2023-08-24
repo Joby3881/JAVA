@@ -1,0 +1,15 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+       float a=2.1f;
+       int b=23;
+       int c=23;
+       float d=1.2f;
+       float result;
+       result=(a+b)-(c*d);
+        System.out.print(result);
+    }
+
+
+}

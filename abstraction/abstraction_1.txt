@@ -1,0 +1,36 @@
+abstract basic code
+
+abstract class mahindra{
+abstract void engine();//metherod declear
+}
+class car extends mahindra{
+void engine()//metherod define
+{
+sot print("area);
+}
+}
+class thar extends mahindra{
+void hondaengine()
+{
+sot print("hii")
+}
+}
+pcm
+{
+p s v m
+{
+Car c=new Car();
+c.engine();
+Thar() p=new Thar();
+p.engine();
+}
+
+2
+abstract 
+agar hum ko in abstract class me non abstract metherod ko call karna hoga tho hum child class ke through call karenge.
+
+can we make muitiple abstraction metherod in abstract class 
+yes,we can make it but we can to assure that the child class should be all abstract metherod in child class.
+
+can we make non abstract class and non abstract metherod in code ?
+yes, 

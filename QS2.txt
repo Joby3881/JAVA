@@ -1,0 +1,11 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a=23,b=2,c=1,d=3,e=1,ans;
+        ans=a*(b+c)*(d/e);
+        System.out.print(ans);
+
+    }
+}
+

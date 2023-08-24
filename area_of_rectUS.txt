@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("enter the length");
+        int l=input.nextInt();
+        System.out.print("enter the width");
+        int w=input.nextInt();
+        double rect=l*w;
+        System.out.print(rect);
+    }
+
+}

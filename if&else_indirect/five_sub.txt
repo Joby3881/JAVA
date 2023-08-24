@@ -1,0 +1,139 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter your five subject marks");
+        int eng = input.nextInt();
+        int hindi = input.nextInt();
+        int phy = input.nextInt();
+        int chem = input.nextInt();
+        int math = input.nextInt();
+
+
+
+        if(eng>=80 && eng<=100)
+        {
+            System.out.println("Grad A");
+        }
+        else if(eng>=60 && eng<=79)
+        {
+            System.out.println("Grad B");
+        }
+        else if(eng>=50 && eng<=59)
+        {
+            System.out.println("Grade c");
+        }
+        else if(eng>=45 && eng<=49)
+        {
+            System.out.println("Grad D");
+        }
+        else if(eng>=40 && eng<=44)
+        {
+            System.out.println("Grad Average");
+        }
+        else if(eng>=1 && eng<=39)
+        {
+            System.out.println(" Fail");
+        }
+        if(hindi>=80 && hindi<=100)
+        {
+            System.out.println("Grad A");
+        }
+        else if(hindi>=60 && hindi<=79)
+        {
+            System.out.println("Grad B");
+        }
+        else if(hindi>=50 && hindi<=59)
+        {
+            System.out.println("Grade c");
+        }
+        else if(hindi>=45 && hindi<=49)
+        {
+            System.out.println("Grad D");
+        }
+        else if(hindi>=40 && hindi<=44)
+        {
+            System.out.println("Grad Average");
+        }
+        else if(hindi>=1 && hindi<=39)
+        {
+            System.out.println(" Fail");
+        }
+        if(phy>=80 && phy<=100)
+        {
+            System.out.println("Grad A");
+        }
+        else if(phy>=60 && phy<=79)
+        {
+            System.out.println("Grad B");
+        }
+        else if(phy>=50 && phy<=59)
+        {
+            System.out.println("Grade c");
+        }
+        else if(phy>=45 && phy<=49)
+        {
+            System.out.println("Grad D");
+        }
+        else if(phy>=40 && phy<=44)
+        {
+            System.out.println("Grad Average");
+        }
+        else if(phy>=1 && phy<=39)
+        {
+            System.out.println(" Fail");
+        }
+        if(chem>=80 && chem<=100)
+        {
+            System.out.println("Grad A");
+        }
+        else if(chem>=60 && chem<=79)
+        {
+            System.out.println("Grad B");
+        }
+        else if(chem>=50 && chem<=59)
+        {
+            System.out.println("Grade c");
+        }
+        else if(chem>=45 && chem<=49)
+        {
+            System.out.println("Grad D");
+        }
+        else if(chem>=40 && chem<=44)
+        {
+            System.out.println("Grad Average");
+        }
+        else if(chem>=1 && chem<=39)
+        {
+            System.out.println(" Fail");
+        }
+        if(math>=80 && math<=100)
+        {
+            System.out.println("Grad A");
+        }
+        else if(math>=60 && math<=79)
+        {
+            System.out.println("Grad B");
+        }
+        else if(math>=50 && math<=59)
+        {
+            System.out.println("Grade c");
+        }
+        else if(math>=45 && math<=49)
+        {
+            System.out.println("Grad D");
+        }
+        else if(math>=40 && math<=44)
+        {
+            System.out.println("Grad Average");
+        }
+        else if(math>=1 && eng<=39)
+        {
+            System.out.println(" Fail");
+        }
+        else
+        {
+            System.out.println("Fail");
+        }
+    }
+}

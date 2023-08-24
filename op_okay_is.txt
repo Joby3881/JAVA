@@ -1,0 +1,9 @@
+//import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+     {
+        String name="=>okay okay";
+        System.out.print(" how are you"+name);
+     }
+}

@@ -1,0 +1,83 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter customer or retailer");
+        String a= input.nextLine();
+        System.out.println("enter number of pieces");
+        int b= input.nextInt();
+        System.out.println("enter your amount");
+        int c= input.nextInt();
+        double discount, totalamount;
+
+        if(b>=1 && b<=15)
+        {
+            discount=c*0.15;
+            totalamount=c-discount;
+            System.out.println("customer name anil kumar");
+            System.out.println("phone number : 9253640025");
+            System.out.println("amount of discount"  +discount);
+            System.out.println("total pay amount"  +totalamount);
+        }
+        else if(b>=16&&b<=30)
+        {
+            discount=c*0.3;
+            totalamount=c-discount;
+            System.out.println("customer name anil kumar");
+            System.out.println("phone number : 9253640025");
+            System.out.println("amount of discount"  +discount);
+            System.out.println("total pay amount"  +totalamount);
+        }
+        else if(b>=31&&b<=50)
+        {
+            discount=c*0.5;
+            totalamount=c-discount;
+            System.out.println("customer name anil kumar");
+            System.out.println("phone number : 9253640025");
+            System.out.println("amount of discount"  +discount);
+            System.out.println("total pay amount"  +totalamount);
+        }
+        else if (b>=100&&b<=999)
+        {
+            discount=c*0.05;
+            totalamount=c-discount;
+            System.out.println("customer name asish kumar");
+            System.out.println("phone number : 9502300473");
+            System.out.println("amount of discount"  +discount);
+            System.out.println("total pay amount"  +totalamount);
+        }
+        else if(b>=1000&&b<=1999)
+        {
+            discount=c*0.1;
+            totalamount=c-discount;
+            System.out.println("customer name asish kumar");
+            System.out.println("phone number : 9502300473");
+            System.out.println("amount of discount"  +discount);
+            System.out.println("total pay amount"  +totalamount);
+        }
+        else if(b>=2000&&b<=2999)
+        {
+            discount=c*0.15;
+            totalamount=c-discount;
+            System.out.println("customer name asish kumar");
+            System.out.println("phone number : 9502300473");
+            System.out.println("amount of discount"  +discount);
+            System.out.println("total pay amount"  +totalamount);
+        } else if(b>=3000)
+        {
+            discount=c*0.3;
+            totalamount=c-discount;
+            System.out.println("customer name asish kumar");
+            System.out.println("phone number : 9502300473");
+            System.out.println("amount of discount"  +discount);
+            System.out.println("total pay amount"  +totalamount);
+        }
+        else
+        {
+            System.out.println();
+        }
+    }
+}

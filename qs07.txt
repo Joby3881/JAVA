@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter 1 number");
+        float a=input.nextFloat();
+        System.out.println("enter 2 number");
+        float b=input.nextFloat();
+        System.out.println("enter 3 number");
+        float c=input.nextFloat();
+        System.out.println("enter 4 number");
+        float d=input.nextFloat();
+        System.out.println("enter 5 number");
+        float e=input.nextFloat();
+        System.out.print("enter 6 number");
+        int f=input.nextInt();
+        float ans=(a+b)*(c+(d-e)*f);
+        System.out.print(ans);
+
+    }
+
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter a charector");
+        char ch = input.next().charAt(0);
+
+        if (ch >= 'A' && ch <= 'Z') {
+            System.out.println("upper case" + ch);
+        } else if (ch >= 'a' && ch <='z')
+        {
+            System.out.println("lower case" + ch);
+        } else
+        {
+            System.out.println("not a charector" + ch);
+
+        }
+    }
+}

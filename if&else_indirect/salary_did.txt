@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter you holidays");
+        int holidays=input.nextInt();
+        System.out.println("enter your salary");
+        long salary=input.nextLong();
+        System.out.println("Diducted amount of the salary");
+        double totalsalary;
+
+        if(holidays==1)
+        {
+            totalsalary=salary*1;
+            System.out.println(totalsalary);
+        } else if(holidays>=2 && holidays<5)
+        {
+            totalsalary=salary*0.05;
+            System.out.println(salary-totalsalary);
+        } else if (holidays>=5 && holidays<=14)
+        {
+            totalsalary=salary*0.1;
+            System.out.println(salary-+totalsalary);
+        }
+        else if(holidays==15)
+        {
+            totalsalary=salary*0.5;
+            System.out.println(salary-totalsalary);
+        }
+        else
+        {
+            System.out.println("You are crossed your holidays limit:::::Your sorry salary does not credited");
+        }
+
+    }
+}
+

@@ -1,0 +1,262 @@
+//private class used in the first class and second default class use to extends.
+class  cal {
+     private int a;
+
+    void setA(int a)
+    {
+        this.a = a;
+    }
+    int getA()
+    {
+        return a;
+    }
+}
+class A extends cal
+{
+     int b;
+
+    void setB (int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void add()
+    {
+        System.out.println(a+b);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A a=new A();
+        a.setA(4);
+        a.setB(5);
+        int m=a.getA();
+        int n= a.getB();
+        a.add();
+    }
+}
+
+//showing error nothing compiling.
+
+//first class default used and second class private use to extends.
+
+class  first {
+     int a;
+
+    void setA(int a)
+    {
+        this.a = a;
+    }
+    int getA()
+    {
+        return a;
+    }
+}
+class A extends first
+{
+    private int b;
+
+    void setB (int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void add()
+    {
+        System.out.println(a+b);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A a=new A();
+        a.setA(5);
+        a.setB(5);
+        int m=a.getA();
+        int n= a.getB();
+        a.add();
+    }
+}
+// o/p=10;
+
+
+//both class used protected use to extends.
+class  one {
+    protected int a;
+
+    void setA(int a)
+    {
+        this.a = a;
+    }
+    int getA()
+    {
+        return a;
+    }
+}
+class A extends one
+{
+    protected int b;
+
+    void setB (int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void add()
+    {
+        System.out.println(a+b);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A a=new A();
+        a.setA(4);
+        a.setB(5);
+        int m=a.getA();
+        int n= a.getB();
+        a.add();
+    }
+}
+//o/p=10;
+
+
+//first class used the public and second class used the private.
+class  any {
+    public int a;
+
+    void setA(int a)
+    {
+        this.a = a;
+    }
+    int getA()
+    {
+        return a;
+    }
+}
+class A extends any
+{
+    private int b;
+
+    void setB (int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void add()
+    {
+        System.out.println(a*b);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A a=new A();
+        a.setA(2);
+        a.setB(4);
+        int m=a.getA();
+        int n= a.getB();
+        a.add();
+    }
+}
+//o/p=4;
+
+
+//first class public and second class public use to extends.
+class  any {
+    public int a;
+
+    void setA(int a)
+    {
+        this.a = a;
+    }
+    int getA()
+    {
+        return a;
+    }
+}
+class A extends any
+{
+   public int b;
+
+    void setB (int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void add()
+    {
+        System.out.println(a/b);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A a=new A();
+        a.setA(10);
+        a.setB(2);
+        int m=a.getA();
+        int n= a.getB();
+        a.add();
+    }
+}
+o/p=5;
+
+
+//default and private class used to extends.
+class  sim {
+     int a;
+
+    void setA(int a)
+    {
+        this.a = a;
+    }
+    int getA()
+    {
+        return a;
+    }
+}
+class A extends sim
+{
+    private int b;
+
+    void setB (int b)
+    {
+        this.b=b;
+    }
+    int getB()
+    {
+        return b;
+    }
+    void add()
+    {
+        System.out.println(a-b);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A a=new A();
+        a.setA(6);
+        a.setB(4);
+        int m=a.getA();
+        int n= a.getB();
+        a.add();
+    }
+}
+//o/p=2;
+
+
+conclution : any parent class have used the private access member specifier that class does not extendeble and also the private
+ used in the child class that cannot extends but another public and protected and any other access specifier use evary were use to extendable.
+

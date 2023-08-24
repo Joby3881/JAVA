@@ -1,0 +1,20 @@
+
+public class Main {
+    public static void main(String[] args)
+    {   String cust="Customer Detials:";
+        System.out.println(cust);
+        String custlin="-----------";
+        System.out.println(custlin);
+        String cstid="customerid=101";
+        System.out.println(cstid);
+        String cstname="customer=name Jones";
+        System.out.println(cstname);
+        String cstgend="customer=gender M";
+        System.out.println(cstgend);
+        String csteid="customeremail=custemer1@gmail.com";
+        System.out.println(csteid);
+        String cstmob="customermobile=1122334455";
+        System.out.println(cstmob);
+    }
+
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    scanner sc=new Scanner(System.in);
+	    System.out.print("enter the value of a");
+	    int a=sc.nextInt();
+	    System.out.print("enter the valu of b");
+	    int b=sc.nextInt();
+	    if(a>b)
+	    {
+		System.out.println("a is max");
+	    }
+	    if(b>a)
+	    {
+	        System.out.println("b is max");
+	    }
+	    if(a==b)
+	    {
+	        System.out.println("both are equal");
+	    }
+	
+}

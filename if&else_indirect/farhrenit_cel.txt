@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter C for Fahrenheit value change to celsius otherwise F");
+        char a=sc.next().charAt(0);
+
+        if(a=='F')
+        {
+            System.out.println("enter your Celsius value :");
+            int b=sc.nextInt();
+            System.out.println("Fahrenheit value is : " +((b*1.8)+32));
+        }
+        else if(a=='C')
+        {   System.out.println("enter your Fahrenheit value :");
+            int b=sc.nextInt();
+            System.out.println("celsius value is " +(b-32)*5/9);
+        }
+        else{
+            System.out.println();
+
+        }
+
+    }
+}

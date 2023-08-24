@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+    int a=2;
+      double square=a*a;
+      System.out.print(square);
+    }
+
+}

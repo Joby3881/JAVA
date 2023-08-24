@@ -1,0 +1,20 @@
+
+public class Main {
+    public static void main(String[] args)
+    {
+        int cstid=101;
+        System.out.println(cstid);
+        String cstname="Jones";
+        System.out.println(cstname);
+        char cstgend='M';
+        System.out.println(cstgend);
+        String csteid="custemer1@gmail.com";
+        System.out.println(csteid);
+        int cstmob=1122334455;
+        System.out.println(cstmob);
+    }
+
+
+
+
+}

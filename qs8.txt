@@ -1,0 +1,10 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a=12,b=67,c=23,d=2,ans;
+        ans=(a+b)+(c%d);
+        System.out.print(ans);
+
+    }
+}

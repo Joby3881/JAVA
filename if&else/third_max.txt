@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter the a number");
+        int a=input.nextInt();
+        System.out.println("enter second number");
+        int b=input.nextInt();
+        System.out.println("enter third number");
+        int c=input.nextInt();
+        if(a>b&&a>c)
+        {
+            System.out.println("ais max :" +a);
+        }
+        else if(b>c)
+        {
+            System.out.println("b is max :"+b);
+        }
+        else
+        {
+            System.out.println("c is max " +c);
+        }
+
+    }
+}

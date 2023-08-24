@@ -1,0 +1,29 @@
+   import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your name");
+        String name = input.nextLine();
+        System.out.println("enter your hight in meter");
+        double meter= input.nextDouble();
+
+         double centimeter;
+         centimeter=meter*100;
+        System.out.println(centimeter);
+
+
+        if(centimeter>=175 && centimeter<=190)
+        {
+            System.out.println("Perfect hight");
+        }
+        else if(centimeter>=165 && centimeter<=174)
+        {
+            System.out.println("Eligible");
+        }
+        else
+        {
+            System.out.println("Not eligible");
+        }
+
+    }
+}

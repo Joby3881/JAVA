@@ -1,0 +1,14 @@
+type of attributes
+*single value(unique entity can save in this)
+*multivalue
+
+keys= is an identifier ye relation ship ko batatha hai or banta hai.
+1.primary.
+2.forgen(relation ship b/w 2 entites
+3.candidate (combination of atributes 
+4.superkey or minimal primal key (super set of candidate key.
+
+primary candidate and superkey
+1.conceptual logical and physical data models
+2. cardinality (relationship)
+1 to 1 to m. m to m, many to many

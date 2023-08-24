@@ -1,0 +1,50 @@
+
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+
+        while(a<=10)
+        {
+        int b=1;
+
+      while(b<=10)
+      {
+          System.out.println(a*b);
+          b++;
+      }
+            System.out.println("table \n");
+             a++;
+        }
+
+    }
+}
+
+
+//multiplication table 2 to 10
+//public class Main {
+//    public static void main(String[] args) {
+//
+//
+//        for (int i = 2; i <=10;i++)
+//        {
+//
+//            for (int j= 1;j<=10; j++)
+//            {
+//                System.out.println(i*j);
+//            }
+//
+//            }
+//            System.out.println();
+//        }
+//
+//
+//    }
+
+
+
+

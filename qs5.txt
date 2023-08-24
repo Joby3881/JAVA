@@ -1,0 +1,10 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        float a=4.5f,b=2.3f,c=5.2f,d=1.2f,e=4.5f,g=2.3f,ans;
+        ans=(a+b)*(c+d)-(e*g);
+        System.out.print(ans);
+
+    }
+}

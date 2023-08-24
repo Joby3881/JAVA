@@ -1,0 +1,12 @@
+//import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int C=5;
+        double F=(C*1.8)+32;
+        System.out.print(F);
+    }
+
+}
