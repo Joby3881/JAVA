@@ -1,0 +1,292 @@
+vector :
+1)vector :
+5 name
+direct print
+import java.util.*;
+public class Main{
+    public static void main(String args[]) {
+        Vector<String> vec = new Vector<String>();
+        vec.addElement("hi");
+        vec.addElement("hello");
+        vec.addElement("by");
+        vec.addElement("what");
+        vec.addElement("why");
+
+        System.out.println("Elements are: "+vec);
+    }
+}
+--------------------------------------------------------------------------------------------------------------
+vector :
+5 name
+for lop=>
+import java.util.*;
+public class Main{
+    public static void main(String args[]) {
+        Vector<String> vec = new Vector<>();
+        vec.addElement("hi");
+        vec.addElement("hello");
+        vec.addElement("by");
+        vec.addElement("what");
+        vec.addElement("why");
+
+        for(int i=0;i<vec.size();i++){
+            System.out.println(vec.get(i));
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------
+5 name print
+for each loop=>
+import java.util.*;
+public class Main{
+    public static void main(String args[]) {
+        Vector<String> vec = new Vector<>();
+        vec.addElement("hi");
+        vec.addElement("hello");
+        vec.addElement("by");
+        vec.addElement("what");
+        vec.addElement("why");
+
+        for(String i:vec) {
+            System.out.println();
+        }
+        System.out.println(vec);
+    }
+}
+--------------------------------------------------------------------------------------------------------------
+=>Wrapper classes
+=>integer
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Vector<Integer> al =new Vector<>();
+        System.out.println("\ninteger");
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        for (int i = 0; i < al.size(); i++) {
+            System.out.print(al.get(i)+" ");
+        }
+        System.out.println();
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+=>byte
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Vector<Integer> by =new Vector<>();
+        System.out.println("\nByte");
+        by.add((byte)10);
+        by.add((byte)20);
+        by.add((byte)30);
+        for (int i = 0; i < by.size(); i++) {
+            System.out.print(by.get(i)+" ");
+        }
+        System.out.println();
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+=>short
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Vector<Integer> sh =new Vector<>();
+        System.out.println("\nshort");
+        sh.add((short)11);
+        sh.add((short)22);
+        sh.add((short)33);
+        for (int i = 0; i < sh.size(); i++) {
+            System.out.print(sh.get(i)+" ");
+        }
+        System.out.println();
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+=>long.
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+       Vector<Integer> lo =new Vector<>();
+        System.out.println("\nLong");
+        System.out.println("\n");
+        lo.add((long)110);
+        lo.add((long)220);
+        lo.add((long)330);
+        for (int i = 0; i < lo.size(); i++) {
+            System.out.print(lo.get(i)+" ");
+        }
+        System.out.println();
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+=>float
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Vector<Integer> fl =new Vector<>();
+        System.out.println("\nfloat");
+        fl.add((float)11.2);
+        fl.add((float)22.3);
+        fl.add((float)33.5);
+        for (int i = 0; i < fl.size(); i++) {
+            System.out.print(fl.get(i)+" ");
+        }
+        System.out.println();
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+=>String
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+       Vector<Integer> st=new Vector<>();
+        System.out.println("\nByte");
+        st.add("hi");
+        st.add("hello");
+        st.add("By");
+        for (int i = 0; i < st.size(); i++) {
+            System.out.print(st.get(i)+" ");
+        }
+        System.out.println();
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+=>Boolean
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Vector<Integer> bl=new Vector<>();
+        System.out.println("\nBoolean");
+        bl.add(true);
+        bl.add(false);
+        bl.add(true);
+        for (int i = 0; i < bl.size(); i++) {
+            System.out.print(bl.get(i)+" ");
+        }
+        System.out.println();
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+=>Double
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Vector<Integer> fl=new Vector<>();
+        System.out.println("\ndouble");
+        fl.add((double)11);
+        fl.add((double)22);
+        fl.add((double)33);
+        for (int i = 0; i < fl.size(); i++) {
+            System.out.print(fl.get(i)+" ");
+        }
+        System.out.println();
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+=>Charector
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Vector<Integer> ch=new Vector<>();
+        System.out.println("\ncharector");
+        ch.add('a');
+        ch.add('b');
+        ch.add('c');
+        for (int i = 0; i < ch.size(); i++) {
+            System.out.print(ch.get(i)+" ");
+        }
+        System.out.println();
+    }
+}
+--------------------------------------------------------------------------------------------------------------
+if(even )
+arraylist =even number
+linkedlist
+vector
+
+else if(odd)
+
+arraylist =odd number
+linkedlist
+vector
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+
+        LinkedList<Integer> ll = new LinkedList<>();
+        ll.add(6);
+        ll.add(7);
+        ll.add(8);
+        ll.add(9);
+        ll.add(10);
+
+        Vector<Integer> vec = new Vector<>();
+        vec.add(11);
+        vec.add(12);
+        vec.add(13);
+        vec.add(14);
+        vec.add(15);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("even or odd");
+        String num = sc.nextLine();
+
+        if (num.equals("even")) {
+            System.out.println("pls enter Array list for--->al or  LinkedList for--->ll & Vector for ---vec");
+            String n = sc.nextLine();
+            if (n.equals("al")) {
+                for (int i = 0; i < al.size(); i++) {
+                    if (al.get(i) % 2 == 0) {
+                        System.out.println(al.get(i));
+                    }
+                }
+            } else if (n.equals("ll")) {
+                for (int i = 0; i < ll.size(); i++) {
+                    if (ll.get(i) % 2 == 0) {
+                        System.out.println(ll.get(i));
+                    }
+                }
+            } else if (n.equals("vec")) {
+                for (int i = 0; i < vec.size(); i++) {
+                    if (vec.get(i) % 2 == 0) {
+                        System.out.println(vec.get(i));
+                    }
+                }
+            }
+        }
+            if (num.equals("odd")) {
+                System.out.println("pls enter Array list for->al or  LinkedList for->ll & Vector-> vec");
+                String n= sc.nextLine();
+                if (n.equals("al")) {
+                    for (int i = 0; i < al.size(); i++) {
+                        if (al.get(i) % 2 != 0) {
+                            System.out.println(al.get(i));
+                        }
+                    }
+                } else if (n.equals("ll")) {
+                    for (int i = 0; i < ll.size(); i++) {
+                        if (ll.get(i) % 2 != 0) {
+                            System.out.println(ll.get(i));
+                        }
+                    }
+                }
+                else if (n.equals("vec")) {
+                    for (int i = 0; i < vec.size(); i++) {
+                        if (vec.get(i) % 2!= 0) {
+                            System.out.println(vec.get(i));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
