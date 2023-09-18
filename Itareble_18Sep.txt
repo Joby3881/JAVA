@@ -1,0 +1,733 @@
+1)
+aarayllist <string >5 value
+for loop
+for rach
+while
+iterator
+
+import java.util.*;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        a.add("hi");
+        a.add("hello");
+        a.add("By");
+        a.add("what");
+        a.add("why");
+        // Iterator to iterate the String values
+        Iterator iter = a.iterator();
+
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+        //by normal for each loop to value print
+        for (String element : a) {
+            System.out.print(" "+element);
+        }
+        //by normal for loop
+        System.out.println();
+        for(int i=0;i<a.size();i++){
+            System.out.print(a.get(i)+" ");
+        }
+        System.out.println();
+
+        Iterator<String> iterator = a.iterator();
+        // Use a while loop to iterate through the elements and print them
+        while(iterator.hasNext()) {
+            String value = iterator.next();
+            System.out.print(" "+value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+B.aarayllist <string >5 value
+integer : 5 value
+for loop
+for rach
+while
+iterator
+import java.util.*;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> a = new ArrayList<Integer>();
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+        a.add(5);
+        // Iterator to iterate the String values
+        Iterator iter = a.iterator();
+
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+        //by for each loop. 
+        for (Integer element : a) {
+            System.out.print(" "+element);
+        }
+        System.out.println();
+
+        //by normal for loop
+        System.out.println();
+        for(int i=0;i<a.size();i++){
+            System.out.print(a.get(i)+" ");
+        }
+        System.out.println();
+
+        Iterator<Integer> iterator = a.iterator();
+        // Use a while loop to iterate through the elements and print them
+        while(iterator.hasNext()) {
+            Integer value = iterator.next();
+            System.out.print(" "+value);
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------
+2.linked <string >5 value
+for loop
+for rach
+while
+iterator
+
+import java.util.*;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<String> a = new LinkedList<String>();
+        a.add("hi");
+        a.add("hello");
+        a.add("By");
+        a.add("what");
+        a.add("why");
+        // Iterator to iterate the String values
+        Iterator iter = a.iterator();
+
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+        //by for each loop.
+        for (String element : a) {
+            System.out.print(" "+element);
+        }
+        System.out.println();
+
+        //by normal for loop
+        System.out.println();
+        for(int i=0;i<a.size();i++){
+            System.out.print(a.get(i)+" ");
+        }
+        System.out.println();
+
+        Iterator<String> iterator = a.iterator();
+        // Use a while loop to iterate through the elements and print them
+        while(iterator.hasNext()) {
+            String value = iterator.next();
+            System.out.print(" "+value);
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------
+B.ArrayList
+integer : 5 value
+for loop
+for rach
+while
+iterator
+
+import java.util.*;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Integer> a = new LinkedList<Integer>();
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+        a.add(5);
+        // Iterator to iterate the String values
+        Iterator iter = a.iterator();
+
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+        //by for each loop
+        for (Integer element : a) {
+            System.out.print(" "+element);
+        }
+        System.out.println();
+
+         //by normal for loop
+        System.out.println();
+        for(int i=0;i<a.size();i++){
+            System.out.print(a.get(i)+" ");
+        }
+        System.out.println();
+
+        Iterator<Integer> iterator = a.iterator();
+        // Use a while loop to iterate through the elements and print them
+        while(iterator.hasNext()) {
+            Integer value = iterator.next();
+            System.out.print(" "+value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+ vector <string >5 value
+for loop
+for each
+while
+iterator
+import java.util.*;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        Vector<String> a = new Vector<String>();
+        a.add("hi");
+        a.add("hello");
+        a.add("By");
+        a.add("what");
+        a.add("why");
+        // Iterator to iterate the String values
+        Iterator iter = a.iterator();
+
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+        //by for each loop.
+        for (String element : a) {
+            System.out.print(" "+element);
+        }
+        System.out.println();
+
+        //by normal for loop
+        System.out.println();
+        for(int i=0;i<a.size();i++){
+            System.out.print(a.get(i)+" ");
+        }
+        System.out.println();
+
+        Iterator<String> iterator = a.iterator();
+        // Use a while loop to iterate through the elements and print them
+        while(iterator.hasNext()) {
+            String value = iterator.next();
+            System.out.print(" "+value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+B.vector <string >5 value
+integer : 5 value
+for loop
+for rach
+while
+iterator
+import java.util.*;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        Vector<Integer> a = new Vector<>();
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+        a.add(5);
+        // Iterator to iterate the String values
+        Iterator iter = a.iterator();
+
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+        //by for each loop & and here for loop not applicable.
+        for (Integer element : a) {
+            System.out.print(" "+element);
+        }
+        System.out.println();
+
+         //by normal for loop
+        System.out.println();
+        for(int i=0;i<a.size();i++){
+            System.out.print(a.get(i)+" ");
+        }
+        System.out.println();
+
+        Iterator<Integer> iterator = a.iterator();
+        // Use a while loop to iterate through the elements and print them
+        while(iterator.hasNext()) {
+            Integer value = iterator.next();
+            System.out.print(" "+value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+4)
+stack<string >5 value
+for loop
+for rach
+while
+iterator
+import java.util.*;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        Stack<String> a = new Stack<String>();
+        a.add("hi");
+        a.add("hello");
+        a.add("By");
+        a.add("what");
+        a.add("why");
+        // Iterator to iterate the String values
+        Iterator iter = a.iterator();
+
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+        //by for each loop.
+        for (String element : a) {
+            System.out.print(" "+element);
+        }
+        System.out.println();
+
+         //by normal for loop
+        System.out.println();
+        for(int i=0;i<a.size();i++){
+            System.out.print(a.get(i)+" ");
+        }
+        System.out.println();
+
+        Iterator<String> iterator = a.iterator();
+        // Use a while loop to iterate through the elements and print them
+        while(iterator.hasNext()) {
+            String value = iterator.next();
+            System.out.print(" "+value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+B.stack <string >5 value
+integer : 5 value
+for loop
+for rach
+while
+iterator
+import java.util.*;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        Vector<Integer> a = new Vector<>();
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+        a.add(5);
+        // Iterator to iterate the String values
+        Iterator iter = a.iterator();
+
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+        //by for each loop.
+        for (Integer element : a) {
+            System.out.print(" "+element);
+        }
+        System.out.println();
+
+        //by normal for loop
+        System.out.println();
+        for(int i=0;i<a.size();i++){
+            System.out.print(a.get(i)+" ");
+        }
+        System.out.println();
+
+        Iterator<Integer> iterator = a.iterator();
+        // Use a while loop to iterate through the elements and print them
+        while(iterator.hasNext()) {
+            Integer value = iterator.next();
+            System.out.print(" "+value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+5)
+arayllist <string >5 value
+for loop =>add /remove
+for rach=>add /remove
+while =>add /remove
+iterator =>add /remove
+
+import java.util.ArrayList;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> element= new ArrayList<>();
+
+        element.add("Hi");
+        element.add("Hello");
+        element.add("By");
+        element.add("What's up");
+        element.add("Caio");
+        element.remove(4);
+
+        //Using by for print elements
+        for (int i = 0; i < element.size(); i++) {
+            System.out.print(element.get(i)+" ");
+        }
+        System.out.println();
+
+        //Using by for each print elements
+        for (String cha: element) {
+            System.out.print(cha+" ");
+        }
+        System.out.println();
+
+        //Using by Iterator print elements
+        Iterator iter = element.iterator();
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+
+        Iterator<String> iterator = element.iterator();
+        // Use a while loop to iterate through the elements and print.
+        while(iterator.hasNext()) {
+            String value = iterator.next();
+            System.out.print(" " + value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+arayllist <string >5 value
+integer : 5 value
+for loop
+for rach
+while
+iterator
+
+import java.util.ArrayList;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+        numbers.remove(2);
+
+        //Using by for print elements
+        for (int i = 0; i < numbers.size(); i++) {
+            System.out.print(numbers.get(i)+" ");
+        }
+        System.out.println();
+
+        //Using by for each print elements
+        for (Integer number : numbers) {
+            System.out.print(number+" ");
+        }
+        System.out.println();
+
+             //Using by Iterator print elements
+            Iterator iter = numbers.iterator();
+            while (iter.hasNext())
+                System.out.print(iter.next() + " ");
+            System.out.println();
+
+
+            Iterator<Integer> iterator = numbers.iterator();
+            // Use a while loop to iterate through the elements and print.
+            while(iterator.hasNext()) {
+                Integer value = iterator.next();
+                System.out.print(" " + value);
+            }
+        }
+    }
+----------------------------------------------------------------------------------------------------------------------
+6.linked list<string >5 value
+for loop =>add /remove
+for rach=>add /remove
+while =>add /remove
+iterator =>add /remove
+
+import java.util.LinkedList;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<String> element= new LinkedList<>();
+
+        element.add("Hi");
+        element.add("Hello");
+        element.add("By");
+        element.add("What's up");
+        element.add("Caio");
+        element.remove(4);
+
+        //Using by for print elements
+        for (int i = 0; i < element.size(); i++) {
+            System.out.print(element.get(i)+" ");
+        }
+        System.out.println();
+
+        //Using by for each print elements
+        for (String cha: element) {
+            System.out.print(cha+" ");
+        }
+        System.out.println();
+
+        //Using by Iterator print elements
+        Iterator iter = element.iterator();
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+
+        Iterator<String> iterator = element.iterator();
+        // Use a while loop to iterate through the elements and print.
+        while(iterator.hasNext()) {
+            String value = iterator.next();
+            System.out.print(" " + value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+integer : 5 value
+for loop
+for rach
+while
+iterator
+import java.util.LinkedList;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+        numbers.remove(2);
+
+        //Using by for print elements
+        for (int i = 0; i < numbers.size(); i++) {
+            System.out.print(numbers.get(i)+" ");
+        }
+        System.out.println();
+
+        //Using by for each print elements
+        for (Integer number : numbers) {
+            System.out.print(number+" ");
+        }
+        System.out.println();
+
+        //Using by Iterator print elements
+        Iterator iter = numbers.iterator();
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+
+        Iterator<Integer> iterator = numbers.iterator();
+        // Use a while loop to iterate through the elements and print.
+        while(iterator.hasNext()) {
+            Integer value = iterator.next();
+            System.out.print(" " + value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+7.Stack<string >5 value
+for loop =>add /remove
+for rach=>add /remove
+while =>add /remove
+iterator =>add /remove
+import java.util.Stack;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        Stack<String> element= new Stack<>();
+
+        element.add("Hi");
+        element.add("Hello");
+        element.add("By");
+        element.add("What's up");
+        element.add("Caio");
+        element.remove(4);
+
+        //Using by for print elements
+        for (int i = 0; i < element.size(); i++) {
+            System.out.print(element.get(i)+" ");
+        }
+        System.out.println();
+
+        //Using by for each print elements
+        for (String cha: element) {
+            System.out.print(cha+" ");
+        }
+        System.out.println();
+
+        //Using by Iterator print elements
+        Iterator iter = element.iterator();
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+
+        Iterator<String> iterator = element.iterator();
+        // Use a while loop to iterate through the elements and print.
+        while(iterator.hasNext()) {
+            String value = iterator.next();
+            System.out.print(" " + value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+stack<string >5 value
+integer : 5 value
+for loop
+for rach
+while
+iterator
+import java.util.Stack;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> numbers = new Stack<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+        numbers.remove(2);
+
+        //Using by for print elements
+        for (int i = 0; i < numbers.size(); i++) {
+            System.out.print(numbers.get(i)+" ");
+        }
+        System.out.println();
+
+        //Using by for each print elements
+        for (Integer number : numbers) {
+            System.out.print(number+" ");
+        }
+        System.out.println();
+
+        //Using by Iterator print elements
+        Iterator iter = numbers.iterator();
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+
+        Iterator<Integer> iterator = numbers.iterator();
+        // Use a while loop to iterate through the elements and print.
+        while(iterator.hasNext()) {
+            Integer value = iterator.next();
+            System.out.print(" " + value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+vector<string >5 value
+for loop =>add /remove
+for rach=>add /remove
+while =>add /remove
+iterator =>add /remove
+import java.util.Vector;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        Vector<String> element= new Vector<>();
+
+        element.add("Hi");
+        element.add("Hello");
+        element.add("By");
+        element.add("What's up");
+        element.add("Caio");
+        element.remove(4);
+
+        //Using by for print elements
+        for (int i = 0; i < element.size(); i++) {
+            System.out.print(element.get(i)+" ");
+        }
+        System.out.println();
+
+        //Using by for each print elements
+        for (String cha: element) {
+            System.out.print(cha+" ");
+        }
+        System.out.println();
+
+        //Using by Iterator print elements
+        Iterator iter = element.iterator();
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+
+        Iterator<String> iterator = element.iterator();
+        // Use a while loop to iterate through the elements and print.
+        while(iterator.hasNext()) {
+            String value = iterator.next();
+            System.out.print(" " + value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+integer : 5 value
+for loop
+for rach
+while
+iterator
+import java.util.Vector;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        Vector<Integer> numbers = new Vector<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+        numbers.remove(2);
+
+        //Using by for print elements
+        for (int i = 0; i < numbers.size(); i++) {
+            System.out.print(numbers.get(i)+" ");
+        }
+        System.out.println();
+
+        //Using by for each print elements
+        for (Integer number : numbers) {
+            System.out.print(number+" ");
+        }
+        System.out.println();
+
+        //Using by Iterator print elements
+        Iterator iter = numbers.iterator();
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+
+        Iterator<Integer> iterator = numbers.iterator();
+        // Use a while loop to iterate through the elements and print.
+        while(iterator.hasNext()) {
+            Integer value = iterator.next();
+            System.out.print(" " + value);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
