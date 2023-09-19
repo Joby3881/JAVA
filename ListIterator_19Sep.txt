@@ -1,0 +1,355 @@
+1.collection
+arraylist
+linked list
+stack
+vector
+java cursor :
+a)iterator :alll classes
+add
+remove
+import java.util.*;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        a.add("Hi");
+        a.add("Hello");
+        a.add("By");
+        a.add("What");
+        a.add("Why");
+
+        LinkedList<String> b = new LinkedList<String>();
+        b.add("Mo");
+        b.add("hendo");
+        b.add("Bobby");
+        b.add("Endo");
+        b.add("Alli");
+
+        Stack<String> c = new Stack<String>();
+        c.add("CFC");
+        c.add("LFC");
+        c.add("MCFC");
+        c.add("MUFC");
+        c.add("AFC");
+
+        Stack<String> d = new Stack<String>();
+        d.add("UCL");
+        d.add("FAC");
+        d.add("LCUP");
+        d.add("SCUP");
+        d.add("CWCUP");
+
+        Vector<String> e = new Vector<String>();
+        e.add("Laliga");
+        e.add("EPL");
+        e.add("BULGA");
+        e.add("SERIA A");
+        e.add("Leagu1");
+        // Iterator to iterate the String values from ArrayList.
+        Iterator iter = a.iterator();
+        while (iter.hasNext())
+            System.out.print(iter.next() + " ");
+        System.out.println();
+
+        Iterator<String> iterator=a.iterator();
+        while(iterator.hasNext()){
+            String element = iterator.next();
+            if(element.equals("Hi")){
+                iterator.remove();
+            }
+        }
+        System.out.println(a);
+
+        // Iterator to iterate the String values from LinkedList.
+        Iterator iter1 = b.iterator();
+        while (iter1.hasNext())
+            System.out.print(iter1.next() + " ");
+        System.out.println();
+
+        Iterator<String> iterator1=b.iterator();
+        while(iterator1.hasNext()){
+            String element = iterator1.next();
+            if(element.equals("Mo")){
+                iterator1.remove();
+            }
+        }
+        System.out.println(b);
+
+        // Iterator to iterate the String values from LinkedList.
+        Iterator iter2 = c.iterator();
+        while (iter2.hasNext())
+            System.out.print(iter2.next() + " ");
+        System.out.println();
+
+        Iterator<String> iterator2=c.iterator();
+        while(iterator2.hasNext()){
+            String element = iterator2.next();
+            if(element.equals("CFC")){
+                iterator2.remove();
+            }
+        }
+        System.out.println(c);
+
+        // Iterator to iterate the String values from LinkedList.
+        Iterator iter3 = d.iterator();
+        while (iter3.hasNext())
+            System.out.print(iter3.next() + " ");
+        System.out.println();
+
+        Iterator<String> iterator3=d.iterator();
+        while(iterator3.hasNext()){
+            String element = iterator3.next();
+            if(element.equals("UCL")){
+                iterator3.remove();
+            }
+        }
+        System.out.println(d);
+
+        // Iterator to iterate the String values from LinkedList.
+        Iterator iter4 = e.iterator();
+        while (iter4.hasNext())
+            System.out.print(iter4.next() + " ");
+        System.out.println();
+
+        Iterator<String> iterator4=e.iterator();
+        while(iterator4.hasNext()){
+            String element = iterator4.next();
+            if(element.equals("Laliga")){
+                iterator4.remove();
+            }
+        }
+        System.out.println(e);
+        }
+    }
+---------------------------------------------------------------------------------------------------------------------
+1.b)listiterator : linkedlist and arraylist
+add
+remove
+set
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        a.add("Hi");
+        a.add("Hello");
+        a.add("By");
+        a.add("What");
+        a.add("Why");
+
+        LinkedList<String> b = new LinkedList<String>();
+        b.add("Mo");
+        b.add("hendo");
+        b.add("Bobby");
+        b.add("Endo");
+        b.add("Alli");
+
+       ListIterator<String>listIterator = a.listIterator();
+
+        for (String element : a) {
+            System.out.print(element +" ");
+        }System.out.println(" \n changed elements are below");
+
+        while(listIterator.hasNext()){
+            String element=listIterator.next();
+            if(element.equals("Hi")){
+                listIterator.add("Mango");
+            }
+        }
+        while(listIterator.hasPrevious()){
+            String element =listIterator.previous();
+            if(element.equals("Why")){
+                listIterator.remove();
+            }
+        }
+        for(String value : a){
+            System.out.print(value+" ");
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+1.c)enumeration : loop
+vector and hashtable
+enum color{
+    RED, GREEN, BLUE,WHITE
+}
+public class Main {
+    public static void main(String[] args) {
+
+        for (color rang : color.values()){
+            System.out.println(rang);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+2.practice questions :
+iterator : ;linked list
+arraylist
+vector
+stack
+a)print
+b)even number
+c)odd number
+import java.util.*;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> a = new ArrayList<>();
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+        a.add(5);
+
+        LinkedList<Integer> b = new LinkedList<>();
+        b.add(6);
+        b.add(7);
+        b.add(8);
+        b.add(9);
+        b.add(10);
+
+        Stack<Integer> c = new Stack<>();
+        c.add(20);
+        c.add(21);
+        c.add(22);
+        c.add(23);
+        c.add(25);
+
+        Vector<Integer> e = new Vector<>();
+        e.add(50);
+        e.add(61);
+        e.add(70);
+        e.add(81);
+        e.add(90);
+        ArrayList<Integer>evenNumber = new ArrayList<>();
+        ArrayList<Integer>oddNumber = new ArrayList<>();
+
+       Iterator<Integer>iterator=a.iterator();
+       while(iterator.hasNext()){
+           Integer number =iterator.next();
+           if(number % 2== 0){
+               evenNumber.add(number);
+           }else{
+               oddNumber.add(number);
+           }
+        }
+        System.out.println("Even numbers :" +evenNumber);
+        System.out.println("Odd numbers :" + oddNumber);
+
+        LinkedList<Integer> evenNumber1 = new LinkedList<>();
+        LinkedList<Integer>oddNumber1 = new LinkedList<>();
+
+        Iterator<Integer>iterator1=b.iterator();
+        while(iterator1.hasNext()){
+            Integer number =iterator1.next();
+            if(number % 2== 0){
+                evenNumber1.add(number);
+            }else{
+                oddNumber1.add(number);
+            }
+        }
+        System.out.println("Even numbers :" +evenNumber1);
+        System.out.println("Odd numbers :" + oddNumber1);
+
+        Stack<Integer> evenNumber2 = new Stack<>();
+        Stack<Integer> oddNumber2 = new Stack<>();
+
+        Iterator<Integer>iterator2=c.iterator();
+        while(iterator2.hasNext()){
+            Integer number =iterator2.next();
+            if(number % 2== 0){
+                evenNumber2.add(number);
+            }else{
+                oddNumber2.add(number);
+            }
+        }
+        System.out.println("Even numbers :" +evenNumber2);
+        System.out.println("Odd numbers :" + oddNumber2);
+
+        Vector<Integer> evenNumber3= new Vector<>();
+        Vector<Integer> oddNumber3= new Vector<>();
+
+        Iterator<Integer>iterator3=e.iterator();
+        while(iterator3.hasNext()){
+            Integer number =iterator3.next();
+            if(number % 2== 0){
+                evenNumber3.add(number);
+            }else{
+                oddNumber3.add(number);
+            }
+        }
+        System.out.println("Even numbers :" +evenNumber3);
+        System.out.println("Odd numbers :" + oddNumber3);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+3.linked list and arraylist : listitrrator
+forward
+backward
+import java.util.ArrayList;
+import java.util.ListIterator;
+import java.util.List;
+public class Main {
+    public static void main(String[] args) {
+
+        List<Integer>arr= new ArrayList<>();
+        arr.add(10);
+        arr.add(20);
+        arr.add(30);
+        arr.add(40);
+        arr.add(50);
+
+        ListIterator<Integer>listIterator = arr.listIterator();
+        System.out.println("\n printing forward ");
+        while(listIterator.hasNext()) {
+            Integer element = listIterator.next();
+            System.out.print(element +" ");
+        }
+
+            System.out.println("\n Printing backward");
+            while(listIterator.hasPrevious()){
+                Integer element=listIterator.previous();
+                System.out.print(element +" ");
+            }
+        }
+    }
+----------------------------------------------------------------------------------------------------------------------
+4.vactor and stack : even number : enumerator
+import java.util.Enumeration;
+import java.util.Vector;
+import java.util.Stack;
+public class Main {
+    public static void main(String[] args) {
+
+        Vector<Integer>arr= new Vector<>();
+        arr.add(11);
+        arr.add(20);
+        arr.add(32);
+        arr.add(45);
+        arr.add(55);
+
+        Stack<Integer>arr1= new Stack<>();
+        arr1.add(1);
+        arr1.add(2);
+        arr1.add(3);
+        arr1.add(4);
+        arr1.add(5);
+
+        Enumeration<Integer>enumeration = arr.elements();
+        while(enumeration.hasMoreElements()){
+            Integer element = enumeration.nextElement();
+            if(element%2==0){
+                System.out.println("even number by vector :" +element+" ");
+            }
+        }
+
+        Enumeration<Integer>enumeration1= arr1.elements();
+        while(enumeration1.hasMoreElements()){
+            Integer element = enumeration1.nextElement();
+            if(element%2==0){
+                System.out.println("even number by Stack :"+element+" ");
+            }
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
