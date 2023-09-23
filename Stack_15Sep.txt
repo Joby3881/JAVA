@@ -1,0 +1,434 @@
+1.stack : is vector's extended class.
+-----------
+vector method :all method
+1.add=>
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Stack<String> vc = new Stack<>();
+        vc.add("A");
+        vc.add("B");
+        vc.add("C");
+        vc.add("D");
+        vc.add("E");
+
+        System.out.println("--Elements of Stack are--");
+        for (String str : vc) {
+            System.out.println("Alphabet= " + str);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------
+2.addAll=> a stack to add another stack.
+import java.util.*;
+public class Main{
+    public static void main(String arg[]) {
+
+        Stack<Integer> st= new Stack<>();
+        st.add(1);
+        st.add(2);
+        st.add(3);
+        System.out.println("List of first arrayList: "+st);
+
+        Stack<Integer> st2= new Stack<>();
+        st2.add(4);
+        st2.add(5);
+        st2.add(6);
+        System.out.println("List of second arrayList: "+st2);
+        st.addAll(st2);
+        System.out.println("Final arrayList: "+st);
+    }
+}
+---------------------------------------------------------------------------------------------------------
+3.addElement=> we can add ast element in the stack.
+import java.util.Vector;
+public class Main{
+    public static void main(String arg[]) {
+
+        Vector<String> vc = new Vector<>(3);
+
+        vc.add("A");
+        vc.add("B");
+        vc.add("C");
+        System.out.println("--Elements of Vector are--");
+        for (String str : vc) {
+            System.out.println("Element= " +str);
+        }
+        vc.addElement("Hai");
+        System.out.println("---Elements after addition--- ");
+        for (String str : vc) {
+            System.out.println("Element= " +str);
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------
+4.Capacity()=>
+import java.util.Vector;
+public class Main{
+    public static void main(String arg[]) {
+
+        Vector<String> vc = new Vector<>();
+
+        vc.add("A");
+        vc.add("B");
+        vc.add("C");
+        System.out.println("Current capacity of Vector is: "+vc.capacity());
+    }
+}
+----------------------------------------------------------------------------------------------------------
+5.Clear=>
+import java.util.*;
+public class Main{
+    public static void main(String arg[]) {
+
+        Stack<String> vc = new Stack<>();
+
+        vc.add("A");
+        vc.add("B");
+        vc.add("C");
+        vc.clear();
+        System.out.println("Current size of Vector is: "+vc.size());
+    }
+}
+---------------------------------------------------------------------------------------------------------
+6.clone()=> using for copy of stack.
+import java.util.*;
+public class Main{
+    public static void main(String arg[]) {
+
+        Stack<String> vc = new Stack<>();
+
+        vc.add("A");
+        vc.add("B");
+        vc.add("C");
+        System.out.println("Original vector: "+vc);
+        System.out.println("Cloned vector: "+vc.clone());
+    }
+}
+-------------------------------------------------------------------------------------------------------
+7.Contains=>
+import java.util.*;
+public class Main {
+    public static void main(String arg[]) {
+
+        Stack<String> st = new Stack<>();
+
+        st.add("A");
+        st.add("B");
+        st.add("C");
+        if (st.contains("Java")) {
+            System.out.println("Java is present at the index " + st.indexOf("Java"));
+        } else {
+            System.out.println("Java is not present in the list");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------
+8.ContainsALL=>
+import java.util.*;
+public class Main {
+    public static void main(String arg[]) {
+
+        Stack<String> st = new Stack<>();
+
+        st.add("Facebook");
+        st.add("Whatsapp");
+        st.add("Twitter");
+        st.add("Instagram");
+        //Create an empty list
+        List<String> list = new ArrayList<String>();
+        //Add values in the List
+        list.add("Facebook");
+        list.add("Whatsapp");
+        System.out.println("Does vector contains all stack elements?: "+st.containsAll(list));
+        list.add("Hindi100");
+        System.out.println("Does vector contains all stack elements?: "+st.containsAll(list));
+    }
+  }
+---------------------------------------------------------------------------------------------------------------------
+stack used :
+
+23 45 67 89 22 12 =>print
+size
+pop
+peek
+empty
+
+even number
+odd number
+
+import  java.util.Stack;
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer>stk=new Stack<>();
+        boolean result=stk.empty();
+        System.out.println(result);
+        stk.push(10);
+        stk.push(21);
+        stk.push(30);
+        System.out.println(stk);
+        result=stk.empty();
+        System.out.println(result);
+
+        int popedelement=stk.pop();
+        System.out.println("poppedelement"+popedelement);
+
+        int sizeofstack=stk.size();
+        System.out.println("Size of a stack : "+sizeofstack);
+
+        int topelement=stk.peek();
+        System.out.println("top is :"+topelement);
+        for(int i=0;i< stk.size();i++){
+            if(stk.get(i)%2==0){
+                System.out.println("even numbers :" +stk.get(i));
+            }else{
+                System.out.println("odd numbers :"+ stk.get(i));
+            }
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+ String kajal kdsj kdsvj vsldk dlfkvl dlfv
+ values : 12 67 89 34 19 22 66 46
+ normal code :
+ if(arraylist) : first element , last element , remove ,empty
+
+ remove :int string
+ index ,value duplicate (mid value remove)
+
+ linkedlist : first element , last element , remove ,empty
+
+ remove :int string
+ index ,value duplicate (mid value remove)
+
+ vector : first element , last element , remove ,empty
+
+ remove :int string
+ index ,value duplicate (mid value remove)
+
+ stack : first element , last element , remove ,empty
+
+ remove :int string
+ index ,value duplicate (mid value remove)
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        Stack <Integer> sl = new Stack<>();
+        sl.push(23);
+        sl.push(45);
+        sl.push(67);
+        sl.push(89);
+        sl.push(22);
+        sl.push(12);
+
+        Stack <String> sl2 = new Stack<>();
+        sl2.push("LAL");
+        sl2.push("LALU");
+        sl2.push("ROY");
+        sl2.push("MANU");
+        sl2.push("KAPIL");
+        sl2.push("AMIT");
+
+        LinkedList <Integer> ll = new LinkedList<>();
+        ll.add(232);
+        ll.add(452);
+        ll.add(672);
+        ll.add(892);
+        ll.add(223);
+        ll.add(123);
+
+        LinkedList <String> sll = new LinkedList<>();
+        sll.add("ghK");
+        sll.add("Ihj");
+        sll.add("Igh");
+        sll.add("Uyu");
+        sll.add("JUyyu");
+        sll.add("FIO");
+
+        Vector <Integer> vl = new Vector<>();
+        vl.addElement(213);
+        vl.addElement(415);
+        vl.addElement(617);
+        vl.addElement(819);
+        vl.addElement(212);
+        vl.addElement(121);
+
+        Vector <String> svl = new Vector<>();
+        svl.addElement("wedsfd");
+        svl.addElement("fdsd");
+        svl.addElement("fdsdf");
+        svl.addElement("fdffvcx");
+        svl.addElement("dfd");
+        svl.addElement("dfcds");
+
+        ArrayList <Integer> al = new ArrayList<>();
+        al.add(213);
+        al.add(445);
+        al.add(657);
+        al.add(839);
+        al.add(232);
+        al.add(131);
+
+        ArrayList <String> sal = new ArrayList<>();
+        sal.add("HELLO");
+        sal.add("WHAT");
+        sal.add("HAI");
+        sal.add("hI");
+        sal.add("WHO");
+        sal.add("BY");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("arraylist --> (A) , linkedlist --> (L) , Vector --> (V) , Stack --> (S)");
+        String val = sc.nextLine();
+
+        if(val.equals("A")){
+            System.out.println("String --> (S) , Integer --> (I)");
+            String n = sc.nextLine();
+            if(n.equals("s")){
+                System.out.println("first element -->(F) , last element --> (L) , remove --> (R) ,empty --> (E) ");
+                String sr = sc.nextLine();
+                if(sr.equals("f")){
+                    System.out.println(sal.get(0));
+                }
+                else if(sr.equals("l")){
+                    System.out.println(sal.get(sal.size()-1));
+                }
+                else if(sr.equals("r")){
+                    System.out.println(sal.remove(0));
+                }
+                else if(sr.equals("e")){
+                    System.out.println(sal.isEmpty());
+                }
+            }
+            if(n.equals("i")){
+                System.out.println("first element -->(F) , last element --> (L) , remove --> (R) ,empty --> (E) ");
+                String sr = sc.nextLine();
+                if(sr.equals("f")){
+                    System.out.println(al.get(0));
+                }
+                else if(sr.equals("l")){
+                    System.out.println(al.get(al.size()-1));
+                }
+                else if(sr.equals("r")){
+                    System.out.println(al.remove(0));
+                }
+                else if(sr.equals("e")){
+                    System.out.println(al.isEmpty());
+                }
+            }
+        }
+        if(val.equals("l")){
+            System.out.println("String --> (S) , Integer --> (I)");
+            String n = sc.nextLine();
+            if(n.equals("s")){
+                System.out.println("first element -->(F) , last element --> (L) , remove --> (R) ,empty --> (E) ");
+                String sr = sc.nextLine();
+                if(sr.equals("f")){
+                    System.out.println(sll.get(0));
+                }
+                else if(sr.equals("l")){
+                    System.out.println(sll.get(sll.size()-1));
+                }
+                else if(sr.equals("r")){
+                    System.out.println(sll.remove(0));
+                }
+                else if(sr.equals("e")){
+                    System.out.println(sll.isEmpty());
+                }
+            }
+
+            if(n.equals("i")){
+                System.out.println("first element -->(F) , last element --> (L) , remove --> (R) ,empty --> (E) ");
+                String sr = sc.nextLine();
+                if(sr.equals("f")){
+                    System.out.println(ll.get(0));
+                }
+                else if(sr.equals("l")){
+                    System.out.println(ll.get(ll.size()-1));
+                }
+                else if(sr.equals("r")){
+                    System.out.println(ll.remove(0));
+                }
+                else if(sr.equals("e")){
+                    System.out.println(ll.isEmpty());
+                }
+            }
+        }
+        if(val.equals("v")){
+            System.out.println("String --> (S) , Integer --> (I)");
+            String n = sc.nextLine();
+            if(n.equals("s")){
+                System.out.println("first element -->(F) , last element --> (L) , remove --> (R) ,empty --> (E) ");
+                String sr = sc.nextLine();
+                if(sr.equals("f")){
+                    System.out.println(svl.get(0));
+                }
+                else if(sr.equals("l")){
+                    System.out.println(svl.get(svl.size()-1));
+                }
+                else if(sr.equals("r")){
+                    System.out.println(svl.remove(0));
+                }
+                else if(sr.equals("e")){
+                    System.out.println(svl.isEmpty());
+                }
+            }
+
+            if(n.equals("i")){
+                System.out.println("first element -->(F) , last element --> (L) , remove --> (R) ,empty --> (E) ");
+                String sr = sc.nextLine();
+                if(sr.equals("f")){
+                    System.out.println(vl.get(0));
+                }
+                else if(sr.equals("l")){
+                    System.out.println(vl.get(vl.size()-1));
+                }
+                else if(sr.equals("r")){
+                    System.out.println(vl.remove(0));
+                }
+                else if(sr.equals("e")){
+                    System.out.println(vl.isEmpty());
+                }
+            }
+        }
+        if(val.equals("s")){
+            System.out.println("String --> (S) , Integer --> (I)");
+            String n = sc.nextLine();
+            if(n.equals("s")){
+                System.out.println("first element -->(F) , last element --> (L) , remove --> (R) ,empty --> (E) ");
+                String sr = sc.nextLine();
+                if(sr.equals("f")){
+                    System.out.println(sl2.get(0));
+                }
+                else if(sr.equals("l")){
+                    System.out.println(sl2.get(sl2.size()-1));
+                }
+                else if(sr.equals("r")){
+                    System.out.println(sl2.remove(0));
+                }
+                else if(sr.equals("e")){
+                    System.out.println(sl2.isEmpty());
+                }
+            }
+
+            if(n.equals("i")){
+                System.out.println("first element -->(F) , last element --> (L) , remove --> (R) ,empty --> (E) ");
+                String sr = sc.nextLine();
+                if(sr.equals("f")){
+                    System.out.println(sl.get(0));
+                }
+                else if(sr.equals("l")){
+                    System.out.println(sl.get(sl.size()-1));
+                }
+                else if(sr.equals("r")){
+                    System.out.println(sl.remove(0));
+                }
+                else if(sr.equals("e")){
+                    System.out.println(sl.isEmpty());
+                }
+            }
+        }
+    }
+}
