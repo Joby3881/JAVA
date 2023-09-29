@@ -1,0 +1,210 @@
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        try {
+            int a1[] = new int[5];
+            a1[7] = 22;
+            System.out.println(a1[7]);
+            int a = 3 / 0;
+            System.out.println(a);
+
+        }
+        catch(ArithmeticException ex){
+            System.out.println("walid number pls input");
+        }
+        catch(IndexOutOfBoundsException ex){
+            System.out.println("index bount");
+        }
+        catch(NullPointerException ex){
+            System.out.println("null point");
+        }
+    }
+}
+pehala konsa exception hai ushi ko hi catch mejo bhi exception runn kare ha, orr 2 exception eak sath chalega nahi
+---------------------------------------------------------------------------------------------------------------------------------
+public class Main {
+    public static void main(String[] args) {
+
+        try {
+            int a1[] = new int[5];
+            a1[7] = 22;
+            System.out.println(a1[7]);
+            int a = 3 / 0;
+            System.out.println(a);
+
+        }
+        catch(Exception ex){
+            System.out.println("outBond exception");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+public class Main {
+    public static void main(String[] args) {
+
+        try {
+            int a = 3 / 0;
+            System.out.println(a);
+        }
+        catch(Exception ex){
+            System.out.println("exception");
+        }
+        catch(IndexOutOfBoundsException ex){
+            System.out.println("index bount");
+        }
+        catch(NullPointerException ex){
+            System.out.println("null point");
+        }
+    }
+}
+o/p:error
+exception key word ke badh koi exception allow nahi hai, so error show karega
+---------------------------------------------------------------------------------------------------------------------
+in this code to we will find out the which exception comes in the code,
+and there 'ex' named object will created and to find which type of exception present in the object.
+public class Main {
+    public static void main(String[] args) {
+
+        try {
+           String s="hello";
+           int b=Integer.parseInt(s);
+            System.out.println(b);
+        }
+        catch(Exception ex){
+            System.out.println(ex);
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+fianl block ke bad hum koi block ka istamal nahi kar sakthe
+public class Main {
+    public static void main(String[] args) {
+
+        try {
+            int a = 3 / 0;
+            System.out.println(a);
+        }
+        finally{
+            System.out.println("this is final block");
+        }
+        System.out.println('h');
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------
+Final key word sabse last me use hone wali key word hai, yw exicute hoke output deta hai.
+public class Main {
+    public static void main(String[] args) {
+
+        try {
+            int a = 3 / 0;
+            System.out.println(a);
+        }
+        catch(ArithmeticException ex){
+            System.out.println("Aretmatic error");
+        }
+        catch(IndexOutOfBoundsException ex){
+            System.out.println("index bount");
+        }
+        catch(NullPointerException ex){
+            System.out.println("null point");
+        }
+        finally {
+            System.out.println("this is final block");
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------
+FINAL Key word block ke ander System.exit(0) use karr ke uss block ko further exicution privent ho jata hai.
+public class Main {
+    public static void main(String[] args) {
+
+        try {
+            int a = 3 / 0;
+            System.out.println(a);
+        }
+        catch(ArithmeticException ex){
+            System.out.println("Aretmatic error");
+        }
+        catch(IndexOutOfBoundsException ex){
+            System.out.println("index bount");
+        }
+        catch(NullPointerException ex){
+            System.out.println("null point");
+
+        }
+        finally {
+            System.exit(0);
+            System.out.println("this is final block");
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+ class practice {
+    public static void main(String[] args) {
+        try {
+            int data=50/0;
+        }
+        catch(ArrayIndexOutOfBoundsException e) {
+            System.out.println(e);
+        }
+        System.out.println("rest of the code");
+    }
+}
+o/p :error
+----------------------------------------------------------------------------------------------------------------------
+catch block ke ander exception use karr ke uss ka "e" object ko sirf print kara sakte hai, varna block
+ ke out side vala sout value print karr va deta hai.
+class Multiple {
+
+    public static void main(String[] args) {
+
+        try{
+            int a[]=new int[5];
+            a[5]=30/0;
+            System.out.println(a[10]);
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.println("Arithmetic Exception occurs");
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("ArrayIndexOutOfBounds Exception occurs");
+        }
+        catch(Exception e)
+        {
+            System.out.println("Parent Exception occurs");
+        }
+        System.out.println("rest of the code");
+
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+ class TestFinally{
+    public static void main(String args[]){
+
+        try {
+            System.out.println("Inside try block");
+            int data=25/0;
+            System.out.println(data);
+        }
+
+        catch(ArithmeticException e){
+            System.out.println("Exception handled");
+            System.out.println(e);
+        }
+        finally {
+            System.out.println("finally block is always executed");
+        }
+        System.out.println("rest of the code...");
+    }
+}
+O/P
+Inside try block
+Exception handled
+java.lang.ArithmeticException: / by zero
+finally block is always executed
+rest of the code...
+----------------------------------------------------------------------------------------------------------------------
