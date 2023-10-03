@@ -1,0 +1,143 @@
+
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class Main {
+    public static void main(String[] args) {
+        String input="667A5y7";
+        String  re="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]";
+        Pattern p= Pattern.compile(re);
+        Matcher m=p.matcher(input);
+        if(m.find()&&m.group().equals(input)){
+            System.out.println("valid");
+        }else{
+            System.out.println("invalid");
+        }
+    }
+}
+O/p : invalid
+----------------------------------------------------------------------------------------------------------------------
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class Main {
+    public static void main(String[] args) {
+        String input="123456789";
+        String re="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]";
+        Pattern p=Pattern.compile(re);
+        Matcher m=p.matcher(input);
+        if(m.find()&&m.group().equals(input)){
+            System.out.println("valid");
+        }else{
+            System.out.println("invalid");
+        }
+    }
+}
+o/p:valid
+----------------------------------------------------------------------------------------------------------------------
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class Main {
+    public static void main(String[] args) {
+        String input="1234567891";
+        String re="[0-9]\\d{9}";
+        Pattern p=Pattern.compile(re);
+        Matcher m=p.matcher(input);
+       while(m.find()){
+           System.out.println(m.group());
+       }
+    }
+}
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class Main {
+    public static void main(String[] args) {
+        String input="liverpool";
+        String re="^[a-zA-Z]{9}";
+        Pattern p=Pattern.compile(re);
+        Matcher m=p.matcher(input);
+        while(m.find()){
+            System.out.println(m.group());
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+O/P:liverpool
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class Main {
+    public static void main(String[] args) {
+        String input="A21jgOxb";
+        String re="^[a-zA-Z0-9]{6}";
+        Pattern p=Pattern.compile(re);
+        Matcher m=p.matcher(input);
+        while(m.find()){
+            System.out.println(m.group());
+        }
+    }
+}
+O/P : A21jgOxb
+----------------------------------------------------------------------------------------------------------------------
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class Main {
+    public static void main(String[] args) {
+        String input="AEIOU";
+        String re="[AEIOU]";
+        Pattern p=Pattern.compile(re);
+        Matcher m=p.matcher(input);
+        while(m.find()){
+            System.out.print(m.group());
+        }
+    }
+}
+AEIOU
+----------------------------------------------------------------------------------------------------------------------
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.Scanner;
+
+class RegexExample {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter similar this : "+"Joby@123");
+        String input=sc.nextLine();
+
+        //String input= "Joby@123";
+        String r= "Joby@123";
+
+        Pattern p= Pattern.compile(r);
+        Matcher m= p.matcher(input);
+        if (m.matches()) {
+            System.out.println("The input string matches the pattern.");
+        } else {
+            System.out.println("The input string does not match the pattern.");
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.Scanner;
+
+class RegexExample {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter similar this : "+"Joby@123");
+        String input=sc.nextLine();
+
+        //String input= "Joby@123";
+        String r= "Joby@123";
+
+        Pattern p= Pattern.compile(r);
+        Matcher m= p.matcher(input);
+        while(m.find()){
+            System.out.println(m.group());
+            System.out.println("The input string matches the pattern");
+        }
+    }
+}
