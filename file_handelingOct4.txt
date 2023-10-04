@@ -1,0 +1,464 @@
+Q.1.
+make file:First.text
+
+import java.io.File;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            File f = new File("First.text");
+            if (f.createNewFile()) {
+                System.out.println("file is created" + f.getName());
+            }
+        } catch (IOException ex) {
+            System.out.println("error");
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+Q.2.
+Insert the definition of java into "First.text"
+
+import java.io.FileWriter;
+import java.io.IOException;
+public class Main {
+    public static void main(String[] args) {
+        try {
+            FileWriter mywrite= new FileWriter("First.text");
+            mywrite.write("Java is popular, high level and versatile programming language. Developed by Sun micro-system " +
+                    "in mid 1990 and now owned by oracle ");
+            mywrite.close();{
+                System.out.println("Successfully run");
+            }
+        } catch (IOException ex) {
+            System.out.println("error");
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+3.First.text checked the file exist or not.
+First.text
+
+import java.io.File;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try{
+            File f=new File("First.text");
+            if(f.createNewFile()){
+                System.out.println("file"+f.getName()+" File is created Successfully");
+            }else{
+                System.out.println("File is already exist");
+            }
+        }catch (IOException ex){
+            System.out.println("Error");
+        }
+    }
+}
+O/P:File is already exist.
+----------------------------------------------------------------------------------------------------------------------
+4)
+cloud name :
+content : cloud computing definition
+
+import java.io.FileWriter;
+import java.io.IOException;
+public class Main {
+    public static void main(String[] args) {
+        try {
+            FileWriter mywrite= new FileWriter("Cloud.txt");
+            mywrite.write("cloud computing is the delivery of computing services ");
+            mywrite.close();{
+                System.out.println("Successfully run");
+            }
+        } catch (IOException ex) {
+            System.out.println("error");
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------
+ scan and check have cloud definition
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        try{
+            File f=new File("Cloud.txt");
+            Scanner myreader=new Scanner(f);
+            while(myreader.hasNextLine()){
+                String data = myreader.nextLine();
+                System.out.println(data);
+            }
+            myreader.close();;
+        }catch (FileNotFoundException ex){
+            System.out.println("file not found");
+        }
+    }
+}
+O/P: cloud computing is the delivery of computing services.
+----------------------------------------------------------------------------------------------------------------------
+5.Q.email: user check
+: kajal.kumawatregex;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the e-mail");
+        String input=sc.nextLine();
+        String re="[a-z]{5}[.][a-zA-Z]{12}";
+        Pattern p=Pattern.compile(re);
+        Matcher m=p.matcher(input);
+        if(m.find()&&m.group(0).equals(input)){
+            System.out.println("valid");
+        }else{
+            System.out.println("not valid");
+        }
+    }
+}
+O/P:Valid
+-----------------------------------------------------------------------------------------------------------------
+6.Q.make spacial password: Joby@gmail.com
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the e-mail");
+        String input=sc.nextLine();
+        String re="[a-zA-Z]{4}[@||$||&][a-z]{5}[.][a-z]{3}";
+        Pattern p=Pattern.compile(re);
+        Matcher m=p.matcher(input);
+        if(m.find()&&m.group(0).equals(input)){
+            System.out.println("valid");
+        }else{
+            System.out.println("not valid");
+        }
+    }
+}
+O/p: valid
+-----------------------------------------------------------------------------------------------------------
+Q.7.
+Multiple data store in a single variable without using array and collection;
+
+class cal{
+    void show(int...a){
+        for(int i:a){
+            System.out.println(i);
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        new cal().show(1,2,3,4,5);
+    }
+}
+-----------------------------------------------------------------------------------------------------------------
+8)
+prime number
+swap
+armstrong
+fibonacci
+factorial
+pallindrome
+
+//prime no.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number");
+        int n=sc.nextInt();
+
+        int count=0;
+
+
+        for(int i=1 ; i<=n; i++){
+            if (n%i==0)
+                count++;
+
+        }
+        if(count==2)
+        {
+            System.out.println("number is  prime");
+        }
+        else   {
+
+            System.out.println("number is not prime");
+        }
+       }
+    }
+----------------------------------------------------------------------------------------------------------------------
+//fabunachi 0, 1, 1, 2, 3, 5, 8, 13
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+        {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("enter how much you want fabunaci number");
+            int term=sc.nextInt();
+            int a=0, b=1, c,i;
+
+            for(i=1;i<=term;i++)
+            {
+                c=a+b;
+                a=b;
+                b=c;
+                System.out.println(a+" ");
+
+           }
+        }
+      }
+----------------------------------------------------------------------------------------------------------------------
+amstrong no.
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter a number");
+        int num=sc.nextInt();
+        int sum=0,c=num,rem;
+
+        while(num>0)
+        {
+            rem = num%10;
+            sum = sum+rem*rem*rem;
+            num = num/10;
+        }
+        if(c==sum)
+        {
+            System.out.println("number is amstrong");
+        }
+        else
+        {
+            System.out.println("number is not amstrong");
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+palindrome no.
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter a number");
+        int num=sc.nextInt();
+        int sum=0,c=num,rem;
+
+        while(num>0)
+        {
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        if(c==sum)
+        {
+            System.out.println("number is palindrome");
+        }
+        else
+        {
+            System.out.println("number is not palindrome");
+        }
+
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+swap 2no with 3 variable
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a=10;
+        int b=20;
+        int c=0;
+        c=a; // c=0, a=10 (c=10 &a=0)
+        a=b; // a=0, b=20 (a=20,b=0)
+        b=c; // b=0, c=10 (b=10, c=0)
+        System.out.println("the value of a is :" +a);
+        System.out.println("the value of b is :" +b);
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------
+//swap with/o 3 variable
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a=10;
+        int b=20;
+
+        a=a*b; //a=10*20=200;
+        b=a/b; //b=200/20=10;
+        a=a/b; //a=200/10=20;
+        System.out.println("the value of a is :" +a);
+        System.out.println("the value of b is :" +b);
+    }
+}
+-----------------------------------------------------------------------------------------------------------------
+
+        to check an array is pallindrome or not by array
+        1 2 3 2 1
+
+public class Main {
+    public static void main(String[] args) {
+        int a[] = { 1, 2, 3, 3, 2, 1 };
+        int flag = 0;
+        int i = 0;
+        int j = a.length - 1;
+
+        while (i < j) {
+            if (a[i] != a[j]) {
+                flag = 1;
+                break;
+            }
+            i++;
+            j--;
+        }
+        if (flag == 0) {
+            System.out.println("palindrome");
+        } else {
+            System.out.println("not ");
+        }
+
+    }
+}
+---------------------------------------------------------------------------------------------------------------------
+factorial
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+       int fact = 1;
+       
+       for(int i=1;i<=num;i++){
+        fact = fact * i;
+       }
+       System.out.println("Factorial of "+num+" is: "+fact);
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------
+Q.9.deleting the file
+import java.io.File;
+public class Main {
+    public static void main(String[] args) {
+        File k=new File("First.text");
+        if(k.delete()){
+            System.out.println("file deleted");
+        }else{
+            System.out.println("not deleted");
+            }
+        }
+    }
+O/P: file deleted
+---------------------------------------------------------------------------------------------------------------------
+Q.11.
+Java.txt
+clud1.txt
+networking.txt
+
+import java.io.File;
+import java.io.IOException;
+public class Main {
+    public static void main(String[] args) {
+        try{
+            File j=new File("java.txt");
+            if(j.createNewFile()){
+                System.out.println("create file"+j.getName());
+            }
+            File k=new File("cloud1.txt");
+            if(k.createNewFile()) {
+                System.out.println("create file" + k.getName());
+            }
+            File l=new File("networking.txt");
+            if(l.createNewFile()) {
+                System.out.println("create file" + l.getName());
+            }
+        }catch (IOException ex){
+            System.out.println("error occur");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------
+write content ----->
+import java.io.FileWriter;
+import java.io.IOException;
+public class Main {
+    public static void main(String[] args) {
+        try {
+            FileWriter jWriter =new FileWriter("java.txt");
+            jWriter.write("java is programming language");
+            jWriter.close();
+            System.out.println("Successfully first");
+
+            FileWriter kWriter =new FileWriter("java.txt");
+            kWriter.write("java is programming language");
+            kWriter.close();
+            System.out.println("Successfully second");
+
+            FileWriter lWriter =new FileWriter("java.txt");
+            lWriter.write("java is programming language");
+            lWriter.close();
+            System.out.println("Successfully third");
+        }catch (IOException ex){
+            System.out.println("error");
+        }
+
+    }
+}
+Successfully first
+Successfully second
+Successfully third
+----------------------------------------------------------------------------------------------------------------------
+import java.io.File;
+public class Main {
+    public static void main(String[] args) {
+        File j=new File("java.txt");
+        if(j.delete()){
+            System.out.println("file 1 deleted");
+        }else {
+            System.out.println("not deleted");
+            }
+
+        File k=new File("cloud1.txt");
+        if(k.delete()){
+            System.out.println("file 2 deleted");
+        }else{
+            System.out.println("not deleted");
+        }
+
+        File l=new File("networking.txt");
+        if(l.delete()){
+            System.out.println("file 3 deleted");
+        }else{
+            System.out.println("not deleted");
+        }
+        }
+    }
+O/P:
+file 1 deleted
+file 2 deleted
+file 3 deleted
