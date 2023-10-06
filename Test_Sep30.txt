@@ -1,0 +1,228 @@
+1)print 1 to 100 prime number
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 2; i <100; i++) {
+            boolean isPrime = true;
+
+            for (int j =2; j <i; j++) {
+                if (i % j == 0){
+                    isPrime=false;
+                    break;
+                }
+            }
+            if(isPrime){
+                System.out.println("Prime number :"+" "+i);
+            }
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+2)
+user : bank 
+RBI
+current : 
+deposit : 
+total amount=one lakh 
+amount : 56000
+50000< 
+5%intrest 
+one lakh +deposit amount 
+no intrest 
+msg account total avaialable 
+
+
+withdraw 
+total amount=one lakh 
+amount : 56000
+50000< 
+5%intrest 
+one lakh - deposit amount 
+no intrest 
+msg account total avaialable 
+saving 
+
+SBI
+current 
+deposit : 
+total amount=one lakh 
+amount : 56000
+50000< 
+10%intrest 
+one lakh +deposit amount 
+no intrest 
+msg account total avaialable 
+
+
+withdraw 
+total amount=one lakh 
+amount : 56000
+50000< 
+10%intrest 
+one lakh - deposit amount 
+no intrest 
+msg account total avaialable 
+
+
+
+saving 
+deposit : 
+total amount=one lakh 
+amount : 56000
+50000< 
+10%intrest 
+one lakh +deposit amount 
+no intrest 
+msg account total avaialable 
+
+
+withdraw 
+total amount=one lakh 
+amount : 56000
+50000< 
+10%intrest 
+one lakh - deposit amount 
+no intrest 
+msg account total avaialable 
+
+import java.util.Scanner;
+public  class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter RBI-SBI");
+        String bank=sc.next();
+        if(bank.equals("RBI")){
+            System.out.println("Enter current -or- saving");
+            String cs=sc.next();
+
+            if(cs.equals("current")){
+                System.out.println("withdraw -or- deposit");
+                String wd=sc.next();
+
+                if(wd.equals("withdraw")){
+                    System.out.println("Enter your amount");
+                    int n=sc.nextInt();
+
+                    if(n>50000){
+                        int interest=(n*5)/100;
+                        int rem=n-interest;
+                        int total=100000+rem;
+                        System.out.println("Total amount after %5 interest = "+total);
+                    }else{
+                        int total=100000+n;
+                        System.out.println("Total amount = "+total);
+                    }
+                }
+                else{
+                    System.out.println("Enter amount");
+                    int n=sc.nextInt();
+                    if(n>50000){
+                        int interest=(n*5)/100;
+                        int rem=n-interest;
+                        int total=100000+rem;
+                        System.out.println("Total amount after %5 interest = "+total);
+                    }else{
+                        int total=100000-n;
+                        System.out.println("Total amount ="+total);
+                    }
+                }
+            }
+            else{
+                System.out.println("Enter withdraw -or- deposit");
+                String wd=sc.next();
+                if(wd.equals("withdraw")){
+                    System.out.println("Enter your amount ");
+                    int n=sc.nextInt();
+                    if(n>50000){
+                        int interest=(n*10)/100;
+                        int rem=n-interest;
+                        int total=100000+rem;
+                        System.out.println("Total amount after 10% interest="+total);
+                    }else{
+                        int total=10000+n;
+                        System.out.println("Total amount="+total);
+                    }
+                }
+                else{
+                    System.out.println("Enter amount");
+                    int n=sc.nextInt();
+                    if(n>50000){
+                        int interest=(n*10)/100;
+                        int rem=n-interest;
+                        int total=100000-rem;
+                        System.out.println("Total amount after %5 interest = "+total);
+                    }else{
+                        int total=100000-n;
+                        System.out.println("Total amount ="+total);
+                    }
+                }
+            }
+        }
+        else{
+            System.out.println("Enter current -or- saving");
+            String cs=sc.next();
+
+            if(cs.equals("current")){
+                System.out.println("withdraw -or- deposit");
+                String wd=sc.next();
+
+                if(wd.equals("withdraw")){
+                    System.out.println("Enter your amount");
+                    int n=sc.nextInt();
+
+                    if(n>50000){
+                        int interest=(n*5)/100;
+                        int rem=n-interest;
+                        int total=100000+rem;
+                        System.out.println("Total amount after %5 interest = "+total);
+                    }else{
+                        int total=100000+n;
+                        System.out.println("Total amount = "+total);
+                    }
+                }
+                else{
+                    System.out.println("Enter amount");
+                    int n=sc.nextInt();
+                    if(n>50000){
+                        int interest=(n*5)/100;
+                        int rem=n-interest;
+                        int total=100000-rem;
+                        System.out.println("Total amount after %5 interest = "+total);
+                    }else{
+                        int total=100000-n;
+                        System.out.println("Total amount ="+total);
+                    }
+                }
+            }
+            else{
+                System.out.println("Enter withdraw -or- deposit");
+                String wd=sc.next();
+                if(wd.equals("withdraw")){
+                    System.out.println("Enter your amount ");
+                    int n=sc.nextInt();
+                    if(n>50000){
+                        int interest=(n*10)/100;
+                        int rem=n-interest;
+                        int total=100000+rem;
+                        System.out.println("Total amount after 10% interest="+total);
+                    }else{
+                        int total=10000+n;
+                        System.out.println("Total amount="+total);
+                    }
+                }
+                else{
+                    System.out.println("Enter amount");
+                    int n=sc.nextInt();
+                    if(n>50000){
+                        int interest=(n*10)/100;
+                        int rem=n-interest;
+                        int total=100000-rem;
+                        System.out.println("Total amount after %5 interest = "+total);
+                    }else{
+                        int total=100000-n;
+                        System.out.println("Total amount ="+total);
+                    }
+                }
+            }
+        }
+    }
+}
