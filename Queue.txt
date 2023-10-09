@@ -1,0 +1,102 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+    public static void main(String[] args) {
+        Queue<String> queue = new LinkedList<>();
+
+        // add elements to the queue
+        queue.add("apple");
+        queue.add("banana");
+        queue.add("cherry");
+
+        System.out.println("Queue: " + queue);
+
+        String front = queue.remove();
+        System.out.println("Removed element: " + front);
+
+        System.out.println("Queue after removal: " + queue);
+
+        queue.add("date");
+
+        String peeked = queue.peek();
+        System.out.println("Peeked element: " + peeked);
+
+        System.out.println("Queue after peek: " + queue);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+ Java program to remove elements
+ from a Queue
+
+import java.util.*;
+public class Main {
+
+    public static void main(String args[])
+    {
+        Queue<String> pq = new PriorityQueue<>();
+
+        pq.add("Geeks");
+        pq.add("For");
+        pq.add("Geeks");
+
+        System.out.println("Initial Queue " + pq);
+
+        pq.remove("Geeks");
+
+        System.out.println("After Remove " + pq);
+
+        System.out.println("Poll Method " + pq.poll());
+
+        System.out.println("Final Queue " + pq);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+ Java program to iterate elements
+ to a Queue
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String args[])
+    {
+        Queue<String> pq = new PriorityQueue<>();
+
+        pq.add("Barca");
+        pq.add("City");
+        pq.add("Reds");
+
+        Iterator iterator = pq.iterator();
+
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+ Java program to demonstrate the
+ creation of queue object using the
+ PriorityQueue class
+
+import java.util.*;
+class   Java {
+
+    public static void main(String args[])
+    {
+        Queue<Integer> pQueue = new PriorityQueue<Integer>();
+
+        pQueue.add(10);
+        pQueue.add(20);
+        pQueue.add(15);
+
+
+        System.out.println(pQueue.peek());
+
+        System.out.println(pQueue.poll());
+
+        System.out.println(pQueue.peek());
+    }
+}
+
+
