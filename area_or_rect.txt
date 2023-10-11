@@ -1,0 +1,77 @@
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter area for a or volume for v");
+        char a = sc.next().charAt(0);
+
+        if (a == 'a') {
+            System.out.println("press r for rectangle s for square & t for triangle");
+            char shape = sc.next().charAt(0);
+
+            if (shape == 'r')
+            {
+                System.out.println("enter length of a rectangle:");
+                int l = sc.nextInt();
+                System.out.println("enter the width of the rectangle");
+                int w = sc.nextInt();
+                int r = l * w;
+                System.out.println(r);
+            }
+            if (shape == 's') {
+                System.out.println("enter length of a square");
+                int l = sc.nextInt();
+                int s = l * l;
+                System.out.println(s);
+            }
+            if (shape == 't') {
+                System.out.println("enter base of a triangle");
+                int l = sc.nextInt();
+                System.out.println("enter the base of the triangle");
+                int w = sc.nextInt();
+                double t = 0.5 * l * w;
+                System.out.println(t);
+            }
+        }
+        if(a=='v')
+        {
+            System.out.println("press r for rectangle ,s for square , t for triangle");
+            char shape = sc.next().charAt(0);
+            if(shape=='r')
+            {
+                System.out.println("enter length of a rectangle");
+                int l = sc.nextInt();
+                System.out.println("enter the hight of a rectangle");
+                int h = sc.nextInt();
+                System.out.println("enter the width of a rectangle");
+                int w = sc.nextInt();
+                double r = l*h*w;
+                System.out.println(r);
+            }
+            if(shape=='s')
+            {
+                System.out.println("enter length of a square");
+                int l = sc.nextInt();
+                int s = l * l;
+                System.out.println(s);
+            }
+            if(shape=='t')
+            {
+                System.out.println("enter length of a triangle");
+                int l = sc.nextInt();
+                System.out.println("enter the width of a triangle");
+                int w = sc.nextInt();
+                double r = 0.5*l*w;
+                System.out.println(r);
+            }
+
+        }
+           else
+        {
+            System.out.println();
+
+        }
+    }
+}
