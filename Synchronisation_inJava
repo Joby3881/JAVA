@@ -1,0 +1,122 @@
+Synchronisation is technique that control multithreading and only one thread will enter
+ inside the synchronised area. The main purpose of synchronization is to overcome the problem of multithreading.
+class A {
+   void show(int n){
+      for(int i=1;i<=5;i++){
+          System.out.print(n*i+" ");
+          try{
+              Thread.sleep(1000);
+          }catch (Exception ex){
+              System.out.println(ex);
+          }
+      }
+  }
+}
+class B extends Thread{
+    A k;
+    B(A k){
+        this.k=k;
+    }public void run(){
+        k.show(5);
+    }
+}
+class C extends Thread{
+    A k1;
+    C(A k1){
+        this.k1=k1;
+    }public void run(){
+        k1.show(2);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A t1=new A();
+        B t2=new B(t1);
+        C t3=new C(t1);
+        t2.start();
+        t3.start();
+    }
+}
+o/p: 5 2 10 4 6 15 20 8 10 25 non- synchronised output
+----------------------------------------------------------------------------------------------------------------------
+class A {
+    synchronized void show(int n){
+        for(int i=1;i<=5;i++){
+            System.out.print(n*i+" ");
+            try{
+                Thread.sleep(1000);
+            }catch (Exception ex){
+                System.out.println(ex);
+            }
+        }
+    }
+}
+class B extends Thread{
+    A k;
+    B(A k){
+        this.k=k;
+    }public void run(){
+        k.show(5);
+    }
+}
+class C extends Thread{
+    A k1;
+    C(A k1){
+        this.k1=k1;
+    }public void run(){
+        k1.show(2);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A t1=new A();
+        B t2=new B(t1);
+        C t3=new C(t1);
+        t2.start();
+        t3.start();
+    }
+}
+o/p:5 10 15 20 25 2 4 6 8 10 synchronised o/p retrieved.
+----------------------------------------------------------------------------------------------------------------------
+Static used synchronisation. due to static the the memory carrying same memory and non-static block carrying different
+memory so some time o/p sorting order will varying.
+class A {
+    synchronized static void show(int n){
+        for(int i=1;i<=5;i++){
+            System.out.print(n*i+" ");
+            try{
+                Thread.sleep(1000);
+            }catch (Exception ex){
+                System.out.println(ex);
+            }
+        }
+    }
+}
+class B extends Thread{
+    public void run(){
+        A.show(5);
+    }
+}
+class C extends Thread{
+
+    public void run(){
+        A.show(2);
+    }
+}
+class D extends Thread{
+    public void run(){
+        A.show(1);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+
+        B t2=new B();
+        C t3=new C();
+        D t4=new D();
+        t2.start();
+        t3.start();
+        t4.start();
+    }
+}
+o/p: 5 10 15 20 25 1 2 3 4 5 2 4 6 8 10 
