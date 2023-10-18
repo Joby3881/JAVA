@@ -1,0 +1,168 @@
+Recursion is a function calling it's self. so with diff parameters and
+and it hava a base case to terminate the infinite loop.
+ In recursion, we solve a bigger problem by solving smaller sub problem.
+it helps the code simplify.
+recursion code divide 3 parts
+1.Base case
+2.Recursion work
+3.Self work.
+
+a program  of method calling.
+   class main{
+    static void fun1(){
+        int x=1;
+        fun2();
+        System.out.println(x);
+    }
+    static void fun2(){
+        int y=2;
+        fun3();
+        System.out.println(y);
+    }
+    static void fun3(){
+        int z=3;
+        System.out.println(z);
+    }
+    public static void main(String[] args) {
+        fun1();
+    }
+}
+ --------------------------------------------------------------------------------------------------------------
+Q.1.Factorial of a number
+ public class Main {
+     static int fact(int n) {
+         if (n == 0){
+             return 1;
+         }
+         int ans =fact(n-1);
+         int f=n*ans;
+         return f;
+     }
+
+     public static void main(String[] args) {
+         int n=5;
+             System.out.println(fact(n));
+         }
+     }
+o/p: 120
+-----------------------------------------------------------------------------------------------------------------
+Q.2.Print reverse 10 to 1
+
+public class Main {
+    static void printInc(int n) {
+        if (n == 1) {
+            System.out.println(1);
+            return;
+        }
+        System.out.println(n);
+        printInc(n - 1);
+
+    }
+     public static void main(String[] args) {
+        int n=10;
+         printInc(n);
+     }
+}
+o/p: 10987654321.
+--------------------------------------------------------------------------------------------------------
+Q.3.Print 1 to 10 numbers.
+public class Main {
+    static void printInc(int n) {
+        if (n == 1) {
+            System.out.println(1);
+            return;
+        }
+        printInc(n - 1);
+        System.out.println(n);
+
+    }
+    public static void main(String[] args) {
+        int n=10;
+        printInc(n);
+    }
+}
+o/p: 12345678910.
+----------------------------------------------------------------------------------------------------------------------
+Q.4.Print the table of a 2 number.
+
+   class Table {
+    static int tab(int n) {
+        if (n == 0) {
+            return n;
+        }
+         tab(n-1); {
+            System.out.println(2 * n);
+            return n;
+        }
+    }
+    public static void main(String[] args) {
+        int n=10;
+        tab(n);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+Q.5.Find the 4th fibonacci number.
+    class Fibonacci{
+        static int fib(int n){
+            if(n==0||n==1){
+                return n;
+            }
+            int prev=fib(n-1);
+            int prevPrev=fib(n-2);
+
+            int ans=prev+prevPrev;
+            return ans;
+        }
+
+    public static void main(String[] args) {
+
+        System.out.println(fib(4));
+    }
+}
+---------------------------------------------------------------------------------------------------------------------
+Q.6.class Fibonacci{
+    static int fib(int n){
+        if(n==0||n==1){
+            return n;
+        }
+        int prev=fib(n-1);
+        int prevPrev=fib(n-2);
+
+        int ans=prev+prevPrev;
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        for (int i = 0; i <= 5; i++) {
+            System.out.println(fib(i));
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------
+Q.7.Find the sum of these digit n=5234.
+   class SumofDigit{
+    static int sod(int n){
+        if(n>=0&&n<=9){
+            return n;
+        }
+        return sod(n/10)+n%10;
+    }
+    public static void main(String[] args) {
+        System.out.println(sod(5324));
+    }
+}
+o/p: 14
+-------------------------------------------------------------------------------------------
+Q.8.Find the how much digit in this n=5234.
+class SumofDigit{
+    static int sod(int n){
+        if(n>=0&&n<=9){
+            return n;
+        }
+        return sod(n/10)+1;
+    }
+    public static void main(String[] args) {
+        System.out.println(sod(5234));
+    }
+}
+
