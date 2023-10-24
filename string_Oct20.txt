@@ -1,0 +1,233 @@
+1)string :
+print
+
+regex is my learning platform
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("regex is my learning platform");
+        String s=sc.nextLine();
+
+        System.out.println(s);
+    }
+}
+o/p: regex is my learning platform
+----------------------------------------------------------------------------------------------------------------------
+2)
+string :
+print
+
+regex is my learning platform
+count : number of characters
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        String name= "regex is my learning platform";
+        char [] a=name.toCharArray();
+        int count=0;
+        for(int i=0;i<a.length;i++){
+            count++;
+        }
+        System.out.println("String is :"+count);
+    }
+}
+o/p:String is :29
+----------------------------------------------------------------------------------------------------------------------
+3)String :
+input a character check character present or not ?
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("print any char like 'a'");
+        char c = sc.next().charAt(0);
+        String name = "regex";
+        char[] a = name.toCharArray();
+        int flag=0;
+        for (int i = 0; i < a.length; i++) {
+            if (c == a[i]) {
+              flag=1;
+              break;
+            }}
+            if(flag==1){
+                System.out.println("Present");
+            }else{
+                System.out.println("not present");
+            }
+        }
+    }
+o/p: present
+----------------------------------------------------------------------------------------------------------------------
+Q.3.how many time present ?
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("print any char like 'a'");
+        char c = sc.next().charAt(0);
+        String name = "regex";
+        char[] a = name.toCharArray();
+        int flag=0;
+        for (int i = 0; i < a.length; i++) {
+            if (c == a[i]) {
+                flag=1;
+                break;
+            }}
+
+            if(flag>0){
+                System.out.println(flag);
+            }
+        }
+    }
+----------------------------------------------------------------------------------------------------------------------
+4)String vowel is present or not ?
+        how many vowel present (counting)
+        which is consonant and vowel
+public class Main {
+    public static void main(String[] args) {
+
+        String n= "Liverpool";
+        char[] a=n.toCharArray();
+        int count=0;
+        for (int i=0; i<a.length; i++) {
+            if (a[i]=='a'|| a[i]=='e'||a[i]=='i'||a[i]=='o'|| a[i]=='u'){
+                count++;
+            }
+        }
+        if(count>0){
+            System.out.println("Present");
+        }else{
+            System.out.println("not present");
+
+        }
+        if(count>0){
+            System.out.println(count);
+        }
+    }
+}
+o/p: Present , 4.
+----------------------------------------------------------------------------------------------------------------------
+Q.5.want to find index :user
+i =>indexing
+import java.util.Scanner;
+public class Main {
+    public static int findIndex(char[] array, char element) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == element) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a word like 'a' ");
+        char element=sc.next().charAt(0);
+        String s="faith";
+        char [] array=s.toCharArray();
+
+        int index = findIndex(array, element);
+
+        if (index == -1) {
+            System.out.println("Element not found in array");
+        } else {
+            System.out.println("Index of element is " + index);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+Q.6.
+String is print reverse.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a character");
+        String s=sc.nextLine();
+        char [] a=s.toCharArray();
+
+        for(int i=a.length-1;i>=0;i--){
+            System.out.print(a[i]);
+        }
+        System.out.println();
+    }
+}
+o/p:enter a character
+this means more
+erom snaem siht
+-------------------------------------------------------------------------------------------
+7)
+to check the string is palindrome or not ?
+->array palindrome logic
+public class Main{
+    public static void main(String[] args) {
+        String s="goog";
+        char[] a=s.toCharArray();
+        int i=0, j=a.length-1;
+        int flag=0;
+
+        while(i<j){
+            if( a[i]!= a[j]){
+                flag=1;
+                break;
+            }
+            i++;
+            j--;
+        }
+        if(flag==1) {
+            System.out.println("no palindrome");
+        }
+        else{
+            System.out.println("palindrome");
+        }
+    }
+}
+o/p:palindrome
+----------------------------------------------------------------------------------------------------------------------
+ Q.8. which character is duplicate in string?
+how much?
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a character");
+        String s=sc.nextLine();
+        char [] a=s.toCharArray();
+
+        for(int i=0;i<a.length;i++){
+            for(int j=0;j<a.length;j++)
+            if (a[i]==a[j] && i!=j) {
+                System.out.print(a[i]);
+            }
+        }
+    }
+}
+o/p:enter a character
+liverpool fcc
+loolcc
+-------------------------------------------------------------------------------------
+9)
+how many space present in a string ?
+public class Main {
+    public static void main(String[] args) {
+
+        String n= "Liverpool fc this mean more";
+        char[] a=n.toCharArray();
+        int count=0;
+        for (int i=0; i<a.length; i++) {
+            if (a[i]==' '){
+                count++;
+            }
+        }
+
+        if(count>0){
+            System.out.println(count);
+        }
+    }
+}
+o/p: 4.
+----------------------------------------------------------------------------------------------------------------------
+
