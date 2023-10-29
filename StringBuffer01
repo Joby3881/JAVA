@@ -1,0 +1,179 @@
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb=new StringBuffer("joby");
+//        System.out.println(sb.append("Noby"));
+//        //StringBuilder si=new StringBuilder("joby");
+//
+//    }
+//}
+//o/p:jobyNoby
+//----------------------------------------------------------------------------------------------------------------------
+//Stringbuffer by default capacity is 16.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb=new StringBuffer();
+//        System.out.println(sb.capacity());
+//    }
+//}
+//o/p:16
+//----------------------------------------------------------------------------------------------------------------------
+//capacity() method use to check capacity if string.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb=new StringBuffer("Joby");
+//        System.out.println(sb.capacity());
+//    }
+//}
+//o/p:20. bydefault 16+4=20.
+//----------------------------------------------------------------------------------------------------------------------
+//if 16+1 capacity incress in the capacity will incress.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb=new StringBuffer();
+//        sb.append("Hello");
+//        System.out.println(sb.capacity());
+//        sb.append("World");
+//        System.out.println(sb.capacity());
+//        sb.append("Liverpool fc YNWA");
+//        System.out.println(sb.capacity());
+//    }
+//}
+//o/p:16
+//16
+//34
+//----------------------------------------------------------------------------------------------------------------------
+//the diff b/w capcity() and length() is a capcity() define how much values can store in a object but length()
+// define how much value present in the length method()
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb=new StringBuffer("Joby");
+//        System.out.println(sb.length());
+//    }
+//}
+//o/p:4.
+//----------------------------------------------------------------------------------------------------------------------
+//Use of append() adding behind another element.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb=new StringBuffer("Joby");
+//        System.out.println(sb.append("Bobby"));
+//    }
+//}
+//o/p:JobyBobby
+//----------------------------------------------------------------------------------------------------------------------
+//Find the 3ed index position's word in string.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb=new StringBuffer("Joby");
+//        System.out.println(sb.charAt(3));
+//    }
+//}
+//o/p:y
+//----------------------------------------------------------------------------------------------------------------------
+//Delete() the words 2 index position to 4th index position.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb=new StringBuffer("Liverpool");
+//        System.out.println(sb.delete(2,4));
+//    }
+//}
+//o/p:Lirpool
+//----------------------------------------------------------------------------------------------------------------------
+//deletecharat() remove a given '5' indexing position word.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb=new StringBuffer("Liverpool");
+//        System.out.println(sb.deleteCharAt(5));
+//    }
+//}
+//o/p:Liverool
+//----------------------------------------------------------------------------------------------------------------------
+//In stringbuffer equals() is checked both are objects pointing one object or refer the one object.But string class
+// equals() checked both objects content are similar or not.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb1=new StringBuffer("Liverpool");
+//        StringBuffer sb2=new StringBuffer("Liverpool");
+//        System.out.println(sb1.equals(sb2));
+//    }
+//}
+//o/p:false
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb1=new StringBuffer("Liverpool");
+//        StringBuffer sb2=sb1. append("Hi");
+//        System.out.println(sb1.equals(sb2));
+//    }
+//}
+//o/p:true
+//----------------------------------------------------------------------------------------------------------------------
+//indexof() a particular word index position find out.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb1=new StringBuffer("Liverpool");
+//
+//        System.out.println(sb1.indexOf("e"));
+//    }
+//}
+//o/p:3.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb1=new StringBuffer("Liverpool");
+//
+//        System.out.println(sb1.lastIndexOf("o"));
+//    }
+//}
+//o/p:7 this is show the repeated last value index show.
+//----------------------------------------------------------------------------------------------------------------------
+//insert a particular index value put to use.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb1=new StringBuffer("Liverpool");
+//
+//        System.out.println(sb1.insert(3,"jo"));
+//    }
+//}
+//o/p:Livjoerpool.
+//----------------------------------------------------------------------------------------------------------------------
+//replace() replace 3 to 5 index word by red.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb1=new StringBuffer("Liverpool");
+//
+//        System.out.println(sb1.replace(3,6,"red"));
+//    }
+//}
+//o/p:Livredool
+//----------------------------------------------------------------------------------------------------------------------
+//reverse() use to string reverse.
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb1=new StringBuffer("Liverpool");
+//
+//        System.out.println(sb1.reverse());
+//    }
+//}
+//o/p:loopreviL
+//----------------------------------------------------------------------------------------------------------------------
+//subsequnce() provide index 3 to 7 words
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb1=new StringBuffer("Liverpool");
+//
+//        System.out.println(sb1.subSequence(3,7));
+//    }
+//}
+//o/p:erpo.
+//----------------------------------------------------------------------------------------------------------------------
+//substring index 3 to string provided
+//public class Main {
+//    public static void main(String[] args) {
+//        StringBuffer sb1=new StringBuffer("Liverpool");
+//
+//        System.out.println(sb1.substring(3));
+//    }
+//}
+//o/p:erpool
+//----------------------------------------------------------------------------------------------------------------------
+
+
