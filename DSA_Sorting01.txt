@@ -1,0 +1,130 @@
+*************************************Blubber Sort*********************************************************************
+public class Main  {
+    static void printArray(int []arr){
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr [i]+" ");
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        int [] arr={5,9,11,67,22,98,7,13};
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr.length-i-1;j++){
+                if (arr[j]>arr[j+1]) {
+                    int temp=arr[j];
+                    arr[j] =arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        printArray(arr);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+******************************************Selection sort**************************************************************
+public class Main {
+    static void selectionS(int[] a) {
+        int n = a.length;
+        for (int i = 0; i < n - 1; i++) {
+            int min = i;
+
+            for (int j = i + 1; j < n; j++) {
+                if (a[j] < a[min]) {
+                    min = j;
+                }
+            }
+            int temp = a[i];
+            a[i] = a[min];
+            a[min] = temp;
+        }
+    }
+    public static void main(String[] args) {
+        int a[] = { 5,9,11,67,98,7,13 };
+        selectionS(a);
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+o/p:5 7 9 11 13 22 67 98
+----------------------------------------------------------------------------------------------------------------------
+*********************Insertion Sorting********************************************************************************
+public class Main {
+    static void insertion(int a[]){
+        int n=a.length;
+        for(int i=1;i<n;i++){
+            int j=i;
+
+            while(j>0 && a[j]<a[j-1]){
+                int temp=a[j];
+                a[j]=a[j-1];
+                a[j-1]=temp;
+                j--;
+            }
+        }
+    }
+    public static void main(String[] args) {
+      int[] a={8,3,6,5,4,2};
+      insertion(a);
+      for(int i=0;i<a.length;i++){
+          System.out.print(a[i]+" ");
+      }
+    }
+}
+o/p:2 3 4 5 6 8 
+----------------------------------------------------------------------------------------------------------------------
+******************************Sorting by 2 pointers through***********************************************************
+public class Main{
+    static void printArray(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+    static void swap(int[] a, int left, int right) {
+        int temp = a[left];
+        a[left] = a[right];
+        a[right] = temp;
+    }
+    static void sorted(int a[]) {
+        int n = a.length;
+        int left = 0;// 0
+        int right = a.length - 1;// 5
+        while (left < right) {
+            if (a[left] > a[right]) // a[0]>a[5] //1>0
+            {
+                swap(a, left, right);
+            }
+            left++;
+            right--;
+        }
+        printArray(a);
+    }
+    public static void main(String[] args) {
+        int a[] = {1, 0, 1, 0, 1, 0};
+        printArray(a);
+        sorted(a);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+integer one side and zero are another Right side side.
+public class Main {
+    public static void main(String[] args) {
+        int a[]={0,10,1,5,0,3};
+            int n=a.length;
+            for(int i=0;i<n-1;i++){
+                for(int j=0;j<n-1;j++){
+                    if(a[j]==0&& a[j+1] !=0){
+                        int temp=a[j];
+                        a[j]=a[j+1];
+                        a[j+1]=temp;
+                    }
+                }
+            }
+            for(int val:a){
+                System.out.print(val+" ");
+            }
+    }
+}
+o/p:10 1 5 3 0 0
+----------------------------------------------------------------------------------------------------------------------
