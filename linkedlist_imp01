@@ -1,0 +1,514 @@
+1)
+12 78 54 23 87 15
+
+for loop
+------------------------------LinkedList printed by for loop.---------------------------------------------------------
+public class Main {
+    public static class Node{
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+        }
+    }
+    public static void main(String[] args) {
+        Node x1=new Node(12);
+        Node x2=new Node(78);
+        Node x3=new Node(54);
+        Node x4=new Node(23);
+        Node x5=new Node(87);
+        Node x6=new Node(15);
+        x1.next=x2;
+        x2.next=x3;
+        x3.next=x4;
+        x4.next=x5;
+        x5.next=x6;
+        Node temp=x1;
+        for(int i=1;i<7;i++){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+}
+O/P:12 78 54 23 87 15
+----------------------------------------------------------------------------------------------------------------------
+---------------------------------------while loop---------------------------------------------------------------------
+public class Main {
+    public static void display(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp= temp.next;
+        }
+    }
+    public static class Node{
+        int data;
+        Node next;
+
+        Node(int data){
+            this.data=data;
+        }
+    }
+    public static void main(String[] args) {
+        Node x1=new Node(12);
+        Node x2=new Node(78);
+        Node x3=new Node(54);
+        Node x4=new Node(23);
+        Node x5=new Node(87);
+        Node x6=new Node(15);
+        x1.next=x2;
+        x2.next=x3;
+        x3.next=x4;
+        x4.next=x5;
+        x5.next=x6;
+        display(x1);
+    }
+}
+o/p:12 78 54 23 87 15
+-----------------------------------------------------------------------------------------------------------------------------------
+Q.2)
+34 12 98 65 43 23
+public class Main {
+    public static class Node{
+        int data;
+        Node next;
+        Node (int data){
+            this.data=data;
+        }
+    }
+    public static void main(String[] args) {
+        Node x1=new Node(34);
+        Node x2=new Node(12);
+        Node x3=new Node(98);
+        Node x4=new Node(65);
+        Node x5=new Node(43);
+        Node x6=new Node (23);
+        x1.next=x2;
+        x2.next=x3;
+        x3.next=x4;
+        x4.next=x5;
+        x5.next=x6;
+        Node temp=x1;
+        for(int i=1;i<7;i++){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+}
+o/p:34 12 98 65 43 23
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------while loop---------------------------------------------------------------------------------------------------------
+public class Main {
+    public static  void display(Node head){
+        Node temp=head;
+        while(temp!= null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+    public static class Node{
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+        }
+    }
+    public static void main(String[] args) {
+        Node x1=new Node(34);
+        Node x2=new Node(12);
+        Node x3=new Node(98);
+        Node x4=new Node(65);
+        Node x5=new Node(43);
+        Node x6=new Node(23);
+        x1.next=x2;
+        x2.next=x3;
+        x3.next=x4;
+        x4.next=x5;
+        x5.next=x6;
+        display(x1);
+    }
+}
+o/p:34 12 98 65 43 23
+-------------------------------------------------------------------------------------------------------------------------
+3)
+45 78 54 23 77 88
+
+---------------------------------------------------user input :------------------------------------------------------------
+import java.util.Scanner;
+public class Main {
+    public static class Node{
+        int data;
+        Node next;
+        Node (int data){
+            this.data=data;
+        }
+    }
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first data");
+        int data1=sc.nextInt();
+        Node x1=new Node(data1);
+
+        System.out.println("enter a second data");
+        int data2=sc.nextInt();
+        Node x2=new Node(data2);
+
+        System.out.println("enter a 3ed number ");
+        int data3=sc.nextInt();
+        Node x3=new Node(data3);
+
+        System.out.println("enter a 4th data");
+        int data4=sc.nextInt();
+        Node x4=new Node(data4);
+
+        System.out.println("enter a fifth data");
+        int data5=sc.nextInt();
+        Node x5=new Node(data5);
+
+        System.out.println("enter a sixth data");
+        int data6=sc.nextInt();
+        Node x6=new Node(data6);
+
+        x1.next=x2;
+        x2.next=x3;
+        x3.next=x4;
+        x4.next=x5;
+        x5.next=x6;
+        Node temp=x1;
+        for(int i=1;i<7;i++){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+}
+o/p:12 20 32 35 40 45
+----------------------------------------------------------------------------------------------------------------------
+Q.4)
+12 78 54 23 87 15
+-----------------------------------------even number By for loop---------------------------------------------------------------------------
+public class Main {
+    public static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+        }
+    }
+
+    public static void main(String[] args) {
+        Node x1 = new Node(34);
+        Node x2 = new Node(12);
+        Node x3 = new Node(98);
+        Node x4 = new Node(65);
+        Node x5 = new Node(43);
+        Node x6 = new Node(23);
+        x1.next = x2;
+        x2.next = x3;
+        x3.next = x4;
+        x4.next = x5;
+        x5.next = x6;
+        Node temp = x1;
+        for (int i = 1; i < 7; i++) {
+            if (i % 2 == 0) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+        }
+    }
+}
+o/p:34 12 98
+----------------------------------------------------------------------------------------------------------------------
+Q.5.  (12 78 54 23 87 15)
+-------------------Even number by while loop--------------------------------------------------------------------------
+public class Main {
+    public static void display(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            if (temp.data % 2 == 0) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+        }
+    }
+
+    public static class Node{
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+        }
+    }
+    public static void main(String[] args) {
+        Node x1=new Node(34);
+        Node x2=new Node(12);
+        Node x3=new Node(98);
+        Node x4=new Node(65);
+        Node x5=new Node(43);
+        Node x6=new Node(23);
+        x1.next=x2;
+        x2.next=x3;
+        x3.next=x4;
+        x4.next=x5;
+        x5.next=x6;
+        display(x1);
+    }
+}
+o/p:34 12 98
+----------------------------------------------------------------------------------------------------------------------
+6)
+45 78 54 23 77 88
+
+----------------------------------------------reverse-------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Main {
+    public static class Node{
+        int data;
+        Node next;
+        Node (int data){
+            this.data=data;
+        }
+    }
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first data");
+        int data1=sc.nextInt();
+        Node x1=new Node(data1);
+
+        System.out.println("enter a second data");
+        int data2=sc.nextInt();
+        Node x2=new Node(data2);
+
+        System.out.println("enter a 3ed number ");
+        int data3=sc.nextInt();
+        Node x3=new Node(data3);
+
+        System.out.println("enter a 4th data");
+        int data4=sc.nextInt();
+        Node x4=new Node(data4);
+
+        System.out.println("enter a fifth data");
+        int data5=sc.nextInt();
+        Node x5=new Node(data5);
+
+        System.out.println("enter a sixth data");
+        int data6=sc.nextInt();
+        Node x6=new Node(data6);
+
+        x1.next=x2;
+        x2.next=x3;
+        x3.next=x4;
+        x4.next=x5;
+        x5.next=x6;
+
+        Node[] nodes=new Node[]{x1, x2,x3,x4,x5,x6};
+
+        Node temp=x1;
+        for(int i= nodes.length-1;i>=0;i--){
+            System.out.print(nodes[i].data+" ");
+            temp=temp.next;
+        }
+    }
+}
+o/p:6 5 4 3 2 1
+----------------------------------------------------------------------------------------------------------------------
+7)
+12 78 54 23 87 15
+linkedlist add element
+import java.util.*;
+public class Main{
+    public static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+        }
+    }
+    public static class LinkedList {
+        Node head = null;
+        Node tail = null;
+
+        void addElement(int val) {
+            Node temp = new Node(val);
+            if (head == null) {
+                head = temp;
+            } else {
+                tail.next = temp;
+            }
+            tail=temp;
+        }
+
+        void display() {
+            Node temp = head;
+            while (temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+        }
+    }
+        public static void main(String[] args) {
+            LinkedList ll=new LinkedList();
+            ll.addElement(12);
+            ll.addElement(78);
+            ll.addElement(54);
+            ll.addElement(23);
+            ll.addElement(87);
+            ll.addElement(15);
+            ll.display();
+        }
+}
+o/p:12 78 54 23 87 15
+----------------------------------------------------------------------------------------------------------------------
+Q.8
+45 78 54 23 77 88
+
+---------------------------linkedlist add element---------------------------------------------------------------------
+import java.util.*;
+public class Main{
+    public static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+        }
+    }
+    public static class LinkedList {
+        Node head = null;
+        Node tail = null;
+
+        void addElement(int val) {
+            Node temp = new Node(val);
+            if (head == null) {
+                head = temp;
+            } else {
+                tail.next = temp;
+            }
+            tail=temp;
+        }
+
+        void display() {
+            Node temp = head;
+            while (temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        LinkedList ll=new LinkedList();
+        ll.addElement(12);
+        ll.addElement(78);
+        ll.addElement(54);
+        ll.addElement(23);
+        ll.addElement(87);
+        ll.addElement(15);
+        ll.display();
+    }
+}
+o/p:12 78 54 23 87 15
+----------------------------------------------------------------------------------------------------------------------
+9)
+34  7 65 32 12 780 65
+element insert userdefine insertAtEnd (add)
+for loop
+while loop
+length
+
+
+
+output :
+for
+
+while
+34  7 65 32 12 780 65
+
+you linkedlist length is : 8
+
+import java.util.Scanner;
+public class Main {
+    public static class Node{
+        int data;
+        Node next;
+        Node (int data){
+            this.data=data;
+        }
+    }
+    public static int count(Node head) {
+        int count = 0;
+        Node temp = head;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        Node x1=new Node(34);
+        Node x2=new Node(12);
+        Node x3=new Node(98);
+        Node x4=new Node(65);
+        Node x5=new Node(43);
+        Node x6=new Node (23);
+        x1.next=x2;
+        x2.next=x3;
+        x3.next=x4;
+        x4.next=x5;
+        x5.next=x6;
+        Node temp=x1;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter for or while");
+        String num=sc.nextLine();
+
+        if(num.equals("for")){
+            for(int i=1;i<7;i++){
+                System.out.print(temp.data+" ");
+                temp=temp.next;
+            }
+            System.out.println(": by for loop");
+        }else
+        {
+            while (temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+            System.out.println(": by while loop");
+        }
+        int elementCount=count(x1);
+        System.out.println("count of an linkedList is :"+elementCount);
+    }
+}
+enter for or while
+for
+34 12 98 65 43 23 : by for loop
+count of an linkedList is :6
+----------------------------------------------------------------------------------------------------------------------
+10)
+34  7 65 32 12 780 65
+element insert userdefine insertAtEnd (add)
+
+for loop
+while loop
+ll.add(67)
+length
+
+
+
+output :
+for
+
+while
+34  7 65 32 12 780 65
+
+you linkedlist length is : 8
+user define
+
+
+
+
+
+
