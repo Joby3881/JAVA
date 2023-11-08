@@ -1,0 +1,167 @@
+Q.1)linkedlist
+
+add()
+
+first elemet pr add
+
+mid mey insert
+
+1 2 3 4 5
+insert =>1
+23
+
+insert :2
+78
+
+insert :5
+89
+
+import java.util.*;
+public class Main {
+    public static class Node {
+        int data;
+        Node next;
+        Node (int data){
+            this.data=data;
+        }
+    }
+    public static class LinkedList{
+        Node head=null;
+        Node tail=null;
+
+        void add(int val){
+            Node temp=new Node( val);
+            if(head==null){
+                head=temp;
+            }else {
+                tail.next=temp;
+            }
+            tail=temp;
+        }
+        void display(){
+            Node temp=head;
+            while(temp!=null){
+                System.out.print(temp.data+" ");
+                temp=temp.next;
+            }
+        }
+        void insertFirst(int val){
+            Node temp =new Node(val);
+
+                if(head==null){
+                    head=temp;
+                    tail=temp;
+                }else{
+                    temp.next=head;
+                    head=temp;
+            }
+        }
+        void insertAt(int index, int val){
+            Node t=new Node(val);
+            Node temp=head;
+            for(int i=0;i<index-1;i++){
+                temp=temp.next;
+            }
+            t.next=temp.next;
+            temp.next=t;
+        }
+    }
+    public static void main(String[] args) {
+        LinkedList ll=new LinkedList();
+        ll.add(1);
+        ll.add(2);
+        ll.add(3);
+        ll.add(4);
+        ll.add(5);
+        ll.display();
+        System.out.println("---------add Element-----");
+        ll.insertFirst(38);
+        ll.display();
+        System.out.println("---------insert mid element-----");
+        ll.insertAt(2,78);
+        ll.insertAt(5,89);
+        ll.display();
+    }
+}
+o/p:1 2 3 4 5 ---------add Element--------
+38 1 2 3 4 5 ---------insert mid element-----
+38 1 78 2 3 89 4 5
+----------------------------------------------------------------------------------------------------------------------
+Q.2 (23 67 89 23 12)
+
+insert element
+-------------------------
+count()
+--------------------------
+length()
+
+------------
+size()
+import java.util.*;
+public class Main {
+    public static class Node {
+        int data;
+        Node next;
+        Node (int data){
+            this.data=data;
+        }
+    }
+    public static class LinkedList{
+        Node head=null;
+        Node tail=null;
+
+        void add(int val){
+            Node temp=new Node( val);
+            if(head==null){
+                head=temp;
+            }else {
+                tail.next=temp;
+            }
+            tail=temp;
+        }
+        void display(){
+            Node temp=head;
+            while(temp!=null){
+                System.out.print(temp.data+" ");
+                temp=temp.next;
+            }
+        }
+        void insertAt(int index, int val){
+            Node t=new Node(val);
+            Node temp=head;
+            for(int i=0;i<index-1;i++){
+                temp=temp.next;
+            }
+            t.next=temp.next;
+            temp.next=t;
+        }
+        int count(){
+            int count=0;
+            Node temp=head;
+            while(temp!=null){
+                count++;
+                temp=temp.next;
+            }
+            return count;
+        }
+    }
+    public static void main(String[] args) {
+        LinkedList ll=new LinkedList();
+        ll.add(1);
+        ll.add(2);
+        ll.add(3);
+        ll.add(4);
+        ll.add(5);
+        ll.display();
+
+        System.out.println("---------insert mid element-----");
+        ll.insertAt(2,78);
+        ll.insertAt(5,89);
+        ll.display();
+        System.out.println("--------count----------");
+        System.out.println("count of linkedList is"+" "+ll.count());
+    }
+}
+o/p:1 2 3 4 5 ---------insert mid element-----
+1 2 78 3 4 89 5 --------count----------
+count of linkedList is 7
