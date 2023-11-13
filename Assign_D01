@@ -1,0 +1,205 @@
+//Q.1)
+//Create a Java program that simulates a game of Rock, Paper, Scissors between two
+//players. Take the choices as input and determine the winner using "if-else if"
+//statements. If it's a tie, print "Tie.
+//import java.util.*;
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc=new Scanner(System.in);
+//        System.out.println(" player 1 enter your choice(rock,paper,scissor)");
+//        String player1choice=sc.nextLine();
+//
+//        System.out.println("player 2 enter your choice(rock,paper,scissor");
+//        String player2choice=sc.nextLine();
+//
+//        if(player1choice.equals(player2choice)){
+//            System.out.println("it's a Tie");
+//        }
+//        else if((player1choice.equals("rock")&&player2choice.equals("scissor"))||
+//                (player1choice.equals("scissor")&&player2choice.equals("paper"))||
+//                (player1choice.equals("paper")&&player2choice.equals("rock"))){
+//            System.out.println("Player 1 wins!");
+//        }
+//        else {
+//            System.out.println("Player 2 wins");
+//        }
+//    }
+//}
+//o/p: player 1 enter your choice(rock,paper,scissor)
+//rock
+//player 2 enter your choice(rock,paper,scissor
+//scissor
+//Player 1 wins!
+//----------------------------------------------------------------------------------------------------------------------
+//Q.2)
+//Create a Java program to determine whether a year is a leap year, but with additional
+//conditions: if it's divisible by 4, it's a leap year, unless it's divisible by 100, except
+//when it's also divisible by 400.
+//import java.util.*;
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc=new Scanner(System.in);
+//        System.out.println("enter a year");
+//        int year=sc.nextInt();
+//
+//        if(year%400==0&&year%4==0||year%100!=0){
+//            System.out.println("is a leap year");
+//        }
+//        else{
+//            System.out.println("not a leap year");
+//        }
+//    }
+//}
+//o/p:enter a year
+//1900
+//not a leap year
+//----------------------------------------------------------------------------------------------------------------------
+//3.Write a Java program that accepts a number as input and determines if it's positive,
+//negative, or zero.
+//import java.util.Scanner;
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc=new Scanner(System.in);
+//        System.out.println("Enter a number");
+//        int num=sc.nextInt();
+//
+//        if(num==0){
+//            System.out.println("It is a zero");
+//        }
+//        else if(num>0) {
+//            System.out.println("It is a positive number");
+//        }
+//        else{
+//            System.out.println("It is a negative number");
+//        }
+//    }
+//}
+//o/p:Enter a number
+//-1
+//It is a negative number
+//----------------------------------------------------------------------------------------------------------------------
+//4.Implement a program that takes a string as input and checks if it's a valid email
+//address according to a specific format.
+//import java.util.regex.Pattern;
+//import java.util.regex.Matcher;
+//import java.util.*;
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc=new Scanner(System.in);
+//        System.out.println("only enter this valid id 'Joby3881@gmail.com' ");
+//        String id=sc.nextLine();
+//        String email="Joby3881@gmail.com";
+//        String re="[a-zA-Z]{4}[0-9]{4}[@][a-z]{5}[.][a-z]{3}";
+//        Pattern p=Pattern.compile(re);
+//        Matcher m=p.matcher(email);
+//
+//        if(m.find()&&m.group(0).equals(email)){
+//            System.out.println("valid");
+//        }else {
+//            System.out.println("invalid");
+//        }
+//    }
+//}
+//only enter this valid id 'Joby3881@gmail.com'
+//Joby3881@gmail.com
+//valid
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+//5.Write a Java program to simulate a basic calculator that can perform addition,
+//subtraction, multiplication, and division operations.
+//import java.util.*;
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc=new Scanner(System.in);
+//        System.out.println("enter 'add' for addition and 'sub' for subtraction , 'multi' for multiplication");
+//        String task=sc.nextLine();
+//        System.out.println("enter the first number");
+//        int num1=sc.nextInt();
+//        System.out.println("enter the second number");
+//        int num2=sc.nextInt();
+//
+//        if(task.equals("add")){
+//            int add=num1+num2;
+//            System.out.println("Result of an addition is : "+ add);
+//        } else if (task.equals("sub")) {
+//            int sub=num1-num2;
+//            System.out.println("Result of subtraction is :"+sub);
+//        } else if (task.equals("multi")) {
+//            int multi=num2*num2;
+//            System.out.println("Result of multiplication is :"+ multi);
+//        }
+//    }
+//}
+//o/p:enter 'add' for addition and 'sub' for subtraction , 'multi' for multiplication
+//add
+//enter the first number
+//2
+//enter the second number
+//3
+//Result of an addition is : 5
+//--------------------------------------------------------------------------------------------------------------------------------------
+//7.Write a Java program that checks if a given number is a perfect square and, if it is,
+//finds its square root.
+//import java.util.Scanner;
+// class PerfectSquare {
+//
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Enter a number: ");
+//        double number = scanner.nextDouble();
+//
+//        if (isPerfectSquare(number)) {
+//            double squareRoot = Math.sqrt(number);
+//            System.out.println(number + " is a perfect square.");
+//            System.out.println("Square root: " + squareRoot);
+//        } else {
+//            System.out.println(number + " is not a perfect square.");
+//        }
+//    }
+//    private static boolean isPerfectSquare(double number) {
+//        double squareRoot = Math.sqrt(number);
+//        return squareRoot == Math.floor(squareRoot);
+//    }
+//}
+//----------------------------------------------------------------------------------------------------------------------
+//12.Create a program that calculates and prints the sum of the squares of all even
+//numbers between 1 and 100 using a for loop.
+//public class Main {
+//    public static void main(String[] args) {
+//        int sum=0;
+//        for (int i=2;i<=100;i+=2){
+//            int square=i*i;
+//            sum+=square;
+//        }
+//        System.out.println("The sum of all squares of even numbers b/w 1 to hundred :"+sum);
+//    }
+//}
+//o/p:The sum of all squares of even numbers b/w 1 to hundred :171700
+//----------------------------------------------------------------------------------------------------------------------
+//13.Create a Java program that calculates and prints the sum of the first 100 prime
+//numbers using a for loop.
+//public class Main {
+//    public static void main(String[] args) {
+//        int count = 0; // Number of prime numbers found
+//        int sum = 0;   // Sum of prime numbers
+//
+//        for (int i = 2; i < 100; i++) {
+//            boolean isPrime = true;
+//            for (int j = 2; j < i; j++) {
+//                if (i % j == 0) {
+//                    isPrime = false;
+//                    break;
+//                }
+//            }
+//            if (isPrime) {
+//                System.out.println(i);
+//                sum += i;
+//                count++;
+//            }
+//        }
+//
+//        System.out.println("Sum of the first 100 prime numbers: " + sum);
+//    }
+//}
+//o/p:Sum of the first 100 prime numbers: 1060.
+//------------------------------------------------------------------------------------------------------------------------
