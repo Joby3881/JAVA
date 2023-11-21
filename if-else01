@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the 3 number ");
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        int num3=sc.nextInt();
+        int num4=sc.nextInt();
+
+        if(num1==65&&num2==66&&num3==67&&num4==68){
+            System.out.println("65-A");
+            System.out.println("66-B");
+            System.out.println("67-C");
+            System.out.println("65-D");
+        } if(num1==115&&num2==116&&num3==101&&num4==112){
+            System.out.println("115-s");
+            System.out.println("116-t");
+            System.out.println("101-e");
+            System.out.println("112-p");
+        }
+        else
+        {
+            System.out.println("input does not match");
+        }
+    }
+}
