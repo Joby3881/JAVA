@@ -1,0 +1,192 @@
+head at end.
+public class Main {
+    public static class Node {
+        int val;
+        Node next;
+        Node privous;
+
+        Node(int val) {
+            this.val = val;
+        }
+    }
+
+    public static void display(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.val + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+    public static Node insertAtHead(Node head, int x) {
+        Node t = new Node(30);
+        t.next = head;
+        head.privous = t;
+        head = t;
+        return head;
+    }
+    public static void main(String[] args) {
+        Node a = new Node(7);
+        display(a);
+        Node newhead=insertAtHead(a,30);
+        display(newhead);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+print tail element.
+public class Main {
+    public static class Node {
+        int val;
+        Node next;
+        Node previous;
+
+        Node(int val) {
+            this.val = val;
+        }
+    }
+
+    public static void display(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.val + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+    public static Node insertAtTail(Node head, int x) {
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        Node t = new Node(x);
+        temp.next = t;
+        t.previous = temp;
+        return head; // Return the head of the updated list
+    }
+
+    public static void main(String[] args) {
+        Node a = new Node(10);
+        display(a);
+        Node newHead = insertAtTail(a, 30);
+        display(newHead);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+ insert at middle
+public class Main {
+    public static class Node {
+        int val;
+        Node next;
+        Node previous;
+
+        Node(int val) {
+            this.val = val;
+        }
+    }
+
+    public static void display(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.val + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+    public static Node insertAtTail(Node head, int x) {
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        Node t = new Node(x);
+        temp.next = t;
+        t.previous = temp;
+        return head; // Return the head of the updated list
+    }
+
+    public static Node insertAtMiddle(Node head, int x) {
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        Node newNode = new Node(x);
+
+        if (slow.next != null) {
+            newNode.next = slow.next;
+            slow.next.previous = newNode;
+        }
+
+        slow.next = newNode;
+        newNode.previous = slow;
+
+        return head; // Return the head of the updated list
+    }
+
+    public static void main(String[] args) {
+        Node a = new Node(10);
+        display(a);
+
+        Node newHead = insertAtMiddle(a, 30);
+        display(newHead);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+by integers printed by for eachloop
+import java.util.Stack;
+public class Main {
+public static void main(String[] args) {
+        Stack<Integer>stack=new Stack<>();
+
+        stack.push(10);
+
+        stack.push(20);
+
+        stack.push(30);
+
+        for (int num:stack){
+            System.out.print(num+" ");
+        }
+     }
+ }
+----------------------------------------------------------------------------------------------------------------------
+print by forloop
+import java.util.Stack;
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer>stack=new Stack<>();
+
+        stack.push(10);
+
+        stack.push(20);
+
+        stack.push(30);
+
+       for (int i=0;i<stack.size();i++){
+        }
+        System.out.println(stack+" ");
+    }
+}
+----------------------------------------------------------------------------------------------------------------------
+print by iterator
+import java.util.Stack;
+import java.util.Iterator;
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+
+        Iterator<Integer>iterator=stack.iterator();
+       while (iterator.hasNext()){
+           System.out.println(iterator.next());
+        }
+    }
+}
