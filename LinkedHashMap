@@ -1,0 +1,23 @@
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        LinkedHashMap<Integer,String>lhm=new LinkedHashMap<>();
+        lhm.put(22,"twenty two");
+        lhm.put(2,"two");
+        lhm.put(4,"four");
+        lhm.put(5,"five");
+        lhm.put(10,"ten");
+        lhm.put(7,"seven");
+        lhm.put(-6," minus six");
+
+        System.out.println("map content is :" +lhm);
+        System.out.println("value of  key is :"+lhm.get("two"));
+        lhm.replace(22,"two");
+
+        System.out.println("linked hashmap content : "+lhm);
+        lhm.remove(2);
+
+        System.out.println("lhm after removed content :"+lhm);
+    }
+}
