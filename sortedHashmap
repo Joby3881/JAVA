@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        SortedMap<Integer,String>smap=new TreeMap<>();
+        smap.put(2,"two");
+        smap.put(4,"four");
+        smap.put(5,"five");
+        smap.put(3,"three");
+        System.out.println("map content is :" +smap);
+    }
+}
+//map content is :{2=two, 3=three, 4=four, 5=five} o/p is sorted key values according
