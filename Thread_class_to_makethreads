@@ -1,0 +1,14 @@
+public class Main {
+
+    class Test extends Thread {
+        public void run() {
+            System.out.println("task is loading");
+        }
+    }
+
+    public static void main(String[] args) {
+        Main mainObject = new Main();
+        Test t = mainObject.new Test();
+        t.start();
+    }
+}
