@@ -1,0 +1,14 @@
+import java.lang.Thread;
+public class Main {
+    public class Test implements Runnable {
+        public void run() {
+            System.out.println("task is loading ");
+        }
+    }
+    public static void main(String[] args) {
+        Main t1=new Main();
+        Test t2=t1.new Test();
+        Thread th=new Thread(t2);
+        th.start();
+    }
+}
